@@ -1,0 +1,164 @@
+/* STYLE ABOUT SECAO PAGINA SOBRE MIM */
+:root {
+  /* color primary */
+  --color-primary: #7368ff;
+
+  /* colors for light mode */
+  --bg-body: #f4f4f4;
+  --bg-surface: #fcfcfc;
+  --text-title: #3e3c3c;
+  --text-body: #858585;
+  --text-light: #f6f6f6;
+  --border-color: #9191917a;
+  --card-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode {
+  --bg-body: #040404;
+  --bg-surface: #1c1c1c;
+  --text-title: #f6f6f6;
+  --text-body: #b3b3b3;
+  --text-medium: #3e3e3e;
+  --border-color: #3d3d3d;
+  --card-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 10px;
+  
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  width: 100%;
+}
+.profile__greeting {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: var(--text-body);
+  font-size: 1rem;
+}
+.profile__image img {
+  width: 25rem;
+  height: 25rem;
+}
+.profile__info .profile__description {
+  color: var(--text-body);
+  text-align: left;
+  margin-bottom: 0.625rem;
+}
+.profile__info .profile__description strong {
+  color: var(--color-primary);
+}
+
+.quick-links .quick-links__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.quick-links__link {
+  color: #7c73f3;
+  text-decoration: none;
+  border-bottom: 1px solid #7c73f3;
+  transition: color 0.2s ease;
+}
+
+.quick-links__link:hover {
+  color: var(--text-body);
+  border-bottom: 1px solid var(--text-body);
+}
+
+@media screen and (max-width: 768px) {
+  .main-profile {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .profile img {
+    width: 100%;
+    height: auto;
+    max-width: 12.5rem;
+  }
+  .profile__info {
+    width: 100%;
+  }
+  .profile__greeting {
+    font-size: 0.875rem;
+  }
+  .profile__description {
+    text-align: justify;
+    font-size: 0.875rem;
+  }
+  .quick-links .quick-links__list {
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .quick-links__link {
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    
+  }
+}
+
+/* Ajustes para tablets (768px até 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-profile {
+    width: 80%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile .profile__description {
+    font-size: 1rem;
+  }
+  .profile .profile__image img {
+    width: 100%;
+    height: auto;
+    max-width: 18.75rem;
+  }
+}
+
+/* Ajustes para tablets em modo paisagem ou telas maiores que tablets mas menores que desktop */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .header {
+    padding: 1rem 8rem;
+  }
+  .main-profile {
+    width: 80%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile .profile__info .profile__greeting {
+    font-size: 1rem;
+  }
+  .profile .profile__description {
+    font-size: 1rem;
+  }
+  .profile .profile__image img {
+    width: 100%;
+    height: auto;
+    max-width: 18.75rem;
+  }
+}

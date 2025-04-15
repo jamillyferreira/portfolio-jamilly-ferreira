@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="https://img.icons8.com/color/48/tailwind_css.png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <span class="logo__text">Ferreira</span>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link pag-link" href="#">Projetos</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link pag-link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link pag-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="togglDarkMode">
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </header>
+    <main class="main-content">
+      <section class="home" id="home">
+        <div class="home__content">
+          <h1 class="home__title">Jamilly Ferreira</h1>
+          <h3 class="home__subtitle">Desenvolvedora <span>Front-End</span></h3>
+          <p class="home__descripiton">
+            Sou uma desenvolvedora em formação, buscando oportunidades de estágio
+            para aplicar meus conhecimentos e adquirir experiência prática.
+          </p>
+          <p class="home__frase">"Criatividade é a inteligência se divertindo." – <em>Albert Einstein</em></p>
+          <div class="home__media-social">
+            <button class="home__btn-github"><a href="https://github.com/jamillyferreira"></a>GitHub</button>
+            <button class="home__btn-linkedin"><a href="www.linkedin.com/in/jamillyferreira"></a>LinkedIn</button>
+            <button class="home__btn-cv">Acessar CV</button>
+          </div>
+        </div>
+        <img class="home-image-hero" src="assets/images/hand-coding-animate.svg" alt="Imagem hand condig">
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="project__title">Projetos</h2>
+        <p class="projects__selection">Selecione um projeto</p>
+        <div class="projects__group">
+
+          <article class="project-card">
+            <div class="project-card__content">
+              <div class="project-card__preview">
+                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
+                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              </div>
+
+              <div class="project-card__info">
+                <h3 class="project-card__title">Todo List2</h3>
+                  <div class="project-card__tags">
+                    <span class="tag tag-html">HTML5</span>
+                    <span class="tag tag-css">CSS3</span>
+                    <span class="tag tag-javascript">JAVASCRIPT</span>
+                  </div>
+                <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn-preview">
+                    <i class="fa-solid fa-eye"></i>
+                    Previa
+                  </a>
+                  <a href="#" class="btn btn-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>GitHub</a>
+                </div>
+              </div>
+              
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__content">
+              <div class="project-card__preview">
+                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
+                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Todo List2</h3>
+                <div class="project-card__tags">
+                  <span class="tag tag-html-css">HTML5</span>
+                  <span class="tag tag-html-css">CSS3</span>
+                  <span class="tag tag-javascript">JAVASCRIPT</span>
+                </div>
+                <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn-preview">
+                    <i class="fa-solid fa-eye"></i>
+                    Previa
+                  </a>
+                  <a href="#" class="btn btn-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__content">
+              <div class="project-card__preview">
+                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
+                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Todo List2</h3>
+                <div class="project-card__tags">
+                  <span class="tag tag-html-css">HTML5</span>
+                  <span class="tag tag-html-css">CSS3</span>
+                  <span class="tag tag-javascript">JAVASCRIPT</span>
+                </div>
+                <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn-preview">
+                    <i class="fa-solid fa-eye"></i>
+                    Previa
+                  </a>
+                  <a href="#" class="btn btn-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__content">
+              <div class="project-card__preview">
+                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
+                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Todo List2</h3>
+                <div class="project-card__tags">
+                  <span class="tag tag-html-css">HTML5</span>
+                  <span class="tag tag-html-css">CSS3</span>
+                  <span class="tag tag-javascript">JAVASCRIPT</span>
+                </div>
+                <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn-preview">
+                    <i class="fa-solid fa-eye"></i>
+                    Previa
+                  </a>
+                  <a href="#" class="btn btn-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="link-acesso-rapido">
+        <a href="about.html">
+        <i class="fa-solid fa-circle-up"></i>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+          <em>Feito com dedicação, café e um pouco de código!</em>
+        </p>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://www.linkedin.com/in/jamillyferreira" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://github.com/jamillyferreira" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://jamillyferreira039@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i></a>
+            </li> 
+          </ul>
+        </nav>   
+    </footer>
+  </body>
+</html>
