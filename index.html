@@ -15,10 +15,10 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="https://img.icons8.com/color/48/tailwind_css.png">
   </head>
-  <body>
+  <body class="loading">
     <header class="header">
       <div class="header__logo">
-        <span class="logo__text">Ferreira</span>
+        <span class="logo__text">JF</span>
       </div>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
@@ -37,7 +37,7 @@
         <i class="fa-solid fa-sun icon-sun"></i>
       </button>
     </header>
-    <main class="main-content">
+    <main class="main-content" id="topo">
       <section class="home" id="home">
         <div class="home__content">
           <h1 class="home__title">Jamilly Ferreira</h1>
@@ -48,9 +48,18 @@
           </p>
           <p class="home__frase">"Criatividade é a inteligência se divertindo." – <em>Albert Einstein</em></p>
           <div class="home__media-social">
-            <button class="home__btn-github"><a href="https://github.com/jamillyferreira"></a>GitHub</button>
-            <button class="home__btn-linkedin"><a href="www.linkedin.com/in/jamillyferreira"></a>LinkedIn</button>
-            <button class="home__btn-cv">Acessar CV</button>
+            <a href="https://github.com/jamillyferreira" class="home__btn-github">
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+            <a href="www.linkedin.com/in/jamillyferreira" class="home__btn-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+              LinkedIn
+            </a>
+            <a href="" class="home__btn-cv">
+              <i class="fa-solid fa-file-lines"></i>
+              Currículo
+            </a>
           </div>
         </div>
         <img class="home-image-hero" src="assets/images/hand-coding-animate.svg" alt="Imagem hand condig">
@@ -69,7 +78,7 @@
               </div>
 
               <div class="project-card__info">
-                <h3 class="project-card__title">Todo List2</h3>
+                <h3 class="project-card__title">Todo List</h3>
                   <div class="project-card__tags">
                     <span class="tag tag-html">HTML5</span>
                     <span class="tag tag-css">CSS3</span>
@@ -82,9 +91,9 @@
                     Previa
                   </a>
                   <a href="#" class="btn btn-github">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>GitHub</a>
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </a>
                 </div>
               </div>
               
@@ -98,7 +107,7 @@
                 <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
               </div>
               <div class="project-card__info">
-                <h3 class="project-card__title">Todo List2</h3>
+                <h3 class="project-card__title">Portfólio</h3>
                 <div class="project-card__tags">
                   <span class="tag tag-html-css">HTML5</span>
                   <span class="tag tag-html-css">CSS3</span>
@@ -111,9 +120,9 @@
                     Previa
                   </a>
                   <a href="#" class="btn btn-github">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>GitHub</a>
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -125,7 +134,7 @@
                 <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
               </div>
               <div class="project-card__info">
-                <h3 class="project-card__title">Todo List2</h3>
+                <h3 class="project-card__title">Projeto 3</h3>
                 <div class="project-card__tags">
                   <span class="tag tag-html-css">HTML5</span>
                   <span class="tag tag-html-css">CSS3</span>
@@ -138,9 +147,9 @@
                     Previa
                   </a>
                   <a href="#" class="btn btn-github">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>GitHub</a>
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -152,7 +161,7 @@
                 <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
               </div>
               <div class="project-card__info">
-                <h3 class="project-card__title">Todo List2</h3>
+                <h3 class="project-card__title">Projeto 4</h3>
                 <div class="project-card__tags">
                   <span class="tag tag-html-css">HTML5</span>
                   <span class="tag tag-html-css">CSS3</span>
@@ -165,17 +174,17 @@
                     Previa
                   </a>
                   <a href="#" class="btn btn-github">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>GitHub</a>
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <div class="link-acesso-rapido">
-        <a href="about.html">
+      <div class="scroll-to-top">
+        <a href="#topo">
         <i class="fa-solid fa-circle-up"></i>
         </a>
       </div>
