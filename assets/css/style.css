@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   /* color primary */
@@ -39,30 +39,29 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ESTILO HEADER DESKTOP */
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--bg-surface);
   position: fixed;
   top: 20px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
-  width: 60%;
-  margin: 0 auto;
+  width: 65%;
   padding: 0 1.5rem;
   border-radius: 50px;
   height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   z-index: 100;
+  box-shadow: var(--card-shadow);
 }
 
 .logo__text {
   color: var(--color-primary);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 26px;
 }
 .nav-menu .nav-menu__list {
   display: flex;
@@ -86,12 +85,12 @@ body {
   border: none;
   background-color: var(--text-body);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 27px;
+  height: 27px;
   cursor: pointer;
 }
 .togglDarkMode .icon-sun {
-  font-size: 24px;
+  font-size: 17px;
   color: var(--text-light);
 }
 
@@ -102,7 +101,7 @@ body {
   padding: 0px 10px;
 }
 .home {
-  height: 100%;;
+  height: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -122,7 +121,6 @@ body {
 .home .home__greet img {
   width: 22px;
   height: 22px;
-  
 }
 .home__title {
   font-size: 3.5rem;
@@ -155,8 +153,8 @@ body {
   margin-top: 2rem;
 }
 .home img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: auto;
 }
 
 .home__btn-github,
@@ -166,8 +164,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  height: 35px;
-  width: 20%;
+  padding: 5px 10px;
   font-size: 16px;
   border-radius: 4px;
   color: var(--text-light);
@@ -176,12 +173,24 @@ body {
 }
 .home__btn-github {
   background-color: #3e3c3c;
+  transition: all 0.3s ease;
+}
+.home__btn-github:hover {
+  background-color: #585858;
 }
 .home__btn-linkedin {
   background-color: rgb(40, 104, 224);
+  transition: all 0.3s ease;
+}
+.home__btn-linkedin:hover {
+  background-color: #3f8ae6;
 }
 .home__btn-cv {
   background-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+.home__btn-cv:hover {
+  background-color: #7f77eb;
 }
 
 /* Animação de digitação */
@@ -223,9 +232,9 @@ body {
 }
 .projects__group {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
   margin-top: 2rem;
-  gap: 40px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -259,8 +268,8 @@ body {
   padding: 20px;
   background-color: rgb(231, 231, 231);
 }
-.project-card__preview 
-.image-desktop, .image-mobile {
+.project-card__preview .image-desktop,
+.image-mobile {
   max-width: 100%;
   height: auto;
 }
@@ -271,7 +280,7 @@ body {
   z-index: 2;
 }
 .project-card__preview .image-desktop {
-  width: 85%;  
+  width: 85%;
   z-index: 1;
 }
 .project-card__title {
@@ -283,33 +292,37 @@ body {
 .project-card__tags {
   display: flex;
   gap: 10px;
-  margin: 10px 0px 20px 0;
+  margin: 10px 0px;
   text-align: right;
 }
 .tag {
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 2px 5px;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--text-body);
-  font-weight: 500;
+  font-weight: 600;
+}
+.tag-javascript {
+  color: #b9df11;
+}
+.tag-html {
+  color: orange;
+}
+.tag-css {
+  color: #3f8ae6;
 }
 .project-card__actions {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
   margin-top: 1.2rem;
 }
 .project-card__actions .btn {
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 10px;
-  height: 35px;
-  width: 109px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+  gap: 8px;
   transition: all 0.2 ease;
   cursor: pointer;
 }
@@ -319,7 +332,7 @@ body {
 }
 .project-card__actions .btn-preview:hover {
   background: linear-gradient(135deg, #7368ff, #458de6);
-  transform: translateY(-1px); 
+  transform: translateY(-1px);
 }
 .project-card__actions .btn-github {
   color: var(--text-body);
@@ -344,7 +357,6 @@ body {
   transform: translateY(0);
 }
 .scroll-to-top {
-  
   margin-top: 6rem;
   margin-bottom: 2rem;
   text-align: right;
@@ -399,27 +411,24 @@ body {
     height: 100vh;
   }
   .header {
-    width: 85%;
+    width: 90%;
     height: 3rem;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 15px;
   }
-  .logo__text {
+  .header__logo .logo__text {
     font-size: 18px;
   }
-  .nav-menu__list {
-    gap: 10px !important;
+  .header .nav-menu__list {
+    gap: 10px
   }
   .nav-menu__item {
     text-align: center;
   }
   .nav-menu .nav-menu__item-link {
-    font-size: 13px;
+    font-size: 14px;
   }
-  
-  .header__logo .logo__text {
-    font-size: 16px;
-  }
+
   .togglDarkMode {
     width: 25px;
     height: 25px;
@@ -461,20 +470,15 @@ body {
   }
   .home__media-social {
     justify-content: center;
-    gap: 7px;
+    gap: 10px;
     margin-top: 1.5rem;
   }
-  .home__media-social button {
-    font-size: 12px;
-    padding: 5px;
-  }
-  .home__btn-github,
-  .home__btn-linkedin,
-  .home__btn-cv {
+  .home__media-social a {
     width: 100%;
-    padding: 0 20px;
-    font-size: 12px;
+    padding: 5px 0px;
+    font-size: 14px;
   }
+
   /* Projetos section para mobile */
   .projects {
     margin-top: 3rem;
@@ -510,13 +514,11 @@ body {
     gap: 7px;
   }
   .project-card__actions .btn {
-    width: 30%;
-    height: 30px;
-    font-size: 14px;
+    font-size: 12px;
     gap: 6px;
   }
   .btn i {
-    font-size: 14px;
+    font-size: 10px;
   }
   .scroll-to-top {
     margin: 2.5rem 0 1rem 0;
@@ -534,7 +536,7 @@ body {
   }
   .footer__text {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 1rem;
   }
   .footer__nav .footer__list {
@@ -545,186 +547,94 @@ body {
     font-size: 20px;
   }
 }
-/* Media query para tablets (768px - 1024px) */
-@media screen and (max-width: 1024px) {
-  .header {
-    width: 90%;
-  }
-  .nav-menu .nav-menu__list {
-    gap: 2rem;
-  }
-  .home {
-    flex-direction: column-reverse;
-    gap: 2rem;
-    padding-top: 2rem;
-  }
-  .home__content {
-    width: 100%;
-    text-align: center;
-  }
-  .home__title {
-    font-size: 3rem;
-  }
-  .home__descripiton {
-    max-width: 100%;
-  }
-  .home__media-social {
-    justify-content: center;
-  }
-  .home__btn-github, 
-  .home__btn-linkedin,
-  .home__btn-cv {
-    width: 20%;
-  }
-  .home img {
-    width: 400px;
-    height: 400px;
-  }
-  /* PROJECTS SECTIONS */
+
+/* Tablet retrato */
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .main-content {
     width: 90%;
   }
-  .projects__group {
-    grid-template-columns: 1fr;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .project-card {
-    width: 100%;
-  }
-  .project-card__preview {
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 1200px){
   .header {
-    width: 80%;
+    width: 90%;
   }
   .home {
+    width: 100%;
+    gap: 1rem;
     margin: 0 auto;
-    gap: 4rem;
+  }
+  .home__title {
+    font-size: 34px;
+  }
+  .home__subtitle {
+    font-size: 20px;
   }
   .home__content {
-    max-width: 100%;
+    width: 100%;
   }
-  .home__title {
-    font-size: 2.5rem;
-  }
-  .home__subtitle { font-size: 18px;}
-  .home__descripiton {font-size: 16px;}
-
   .home img {
-    width: 350px;
+    width: 320px;
     height: auto;
   }
-  .home__btn-github,
-  .home__btn-linkedin,
-  .home__btn-cv {
-    width: 30%;
+  .home__media-social a {
     font-size: 14px;
   }
+  .projects__group {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+  }
+  .project-card__title {
+    font-size: 17px;
+  }
+  .project-card__text {
+    font-size: 14px;
+  }
+  .project-card__actions {
+    gap: 7px;
+  }
+  .project-card__actions .btn {
+    font-size: 14px;
+    padding: 0px;
+    width: 90px;
+    height: 30px;
+  }
 }
-/* Media query para tablets menores */
-@media screen and (max-width: 900px) {
+
+/* Tablet paisagem || notebook menor */
+@media screen and (min-width: 992px) and (max-width: 1324px) {
+  .main-content {
+    width: 90%;
+  }
+  .header .nav-menu__list {
+    gap: 1.5rem;
+  }
+  .home {
+    gap: 2rem;
+  }
   .home__title {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
   .home__subtitle {
     font-size: 20px;
   }
   .home img {
-    width: 350px;
+    width: 400px;
     height: auto;
   }
-  .home__btn-github,
-  .home__btn-linkedin,
-  .home__btn-cv {
-    width: 15%;
+  .home__media-social a {
     font-size: 14px;
   }
-  .project-card__preview .image-mobile {
-    width:25%;
-    right: 5%;
+  .projects__group {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 15px;
   }
-}
-
-
-/* Ajustes para tablets (768px até 1024px)
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .header {
-    width: 80%;
-    padding: 1.5rem;
-    height: 4rem;
-    box-shadow: var(--card-shadow);
+  .project-card__actions {
+    gap: 10px;
+    font-size: 14px;
   }
-  .togglDarkMode {
-    width: 30px;
+  .project-card__actions .btn {
+    padding: 0;
+    width: 90px;
     height: 30px;
   }
-  .togglDarkMode .icon-sun {
-    font-size: 18px;
-  }
-  .nav-menu .nav-menu__list {
-    gap: 1.5rem;
-  }
-  .main-content {
-    width: 90%;
-    margin-top: 5rem;
-  }
-  .home {
-    width: 100%;
-    margin: 0 auto;
-    gap: 5rem;
-    padding: 4rem 1rem;
-  }
-  .home img {
-    width: 80%;
-    height: auto;
-    max-width: 350px;
-  }
-  .home__title {
-    font-size: 2.5rem;
-  }
-  .home__greet {
-    font-size: 14px;
-  }
-  .home__subtitle {
-    font-size: 1.3rem;
-  }
-  .home__descripiton {
-    font-size: 14px;
-    max-width: 450px;
-  }
-  .home__frase {
-    font-size: 12px;
-    margin: 0;
-  }
-  .home__media-social {
-    gap: 10px;
-  }
-
-  .home__media-social button {
-    font-size: 14px;
-    padding: 3px 10px;
-  }
-
-  .projects .projects__group {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-  .project-card .image-desktop {
-    width: 80%;
-  }
-  .project-card .image-mobile {
-    width: 20%;
-    right: 15%;
-  }
-  .scroll-to-top i {
-    font-size: 40px;
-  }
-  .footer .footer__content {
-    width: 90%;
-    gap: 1.5rem;
-    padding: 25px 0;
-  }
-} */
+}
