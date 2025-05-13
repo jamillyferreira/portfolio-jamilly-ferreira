@@ -14,22 +14,24 @@
     <script src="assets/js/scripts.js" defer></script>
     <title>Portifolio</title>
     <link rel="stylesheet" href="https://img.icons8.com/color/48/tailwind_css.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body class="loading">
     <header class="header">
       <div class="header__logo">
-        <span class="logo__text">JF</span>
+        <a href="index.html" class="logo__text">JF</a>
       </div>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
-            <a class="nav-menu__item-link pag-link" href="#">Projetos</a>
+            <a class="nav-menu__item-link pag-link" href="#projects">Projetos</a>
           </li>
           <li class="nav-menu__item">
             <a class="nav-menu__item-link pag-link" href="about.html">Sobre mim</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__item-link pag-link" href="#contato">Contato</a>
+            <a class="nav-menu__item-link pag-link" href="#footer">Contato</a>
           </li>
         </ul>
       </nav>
@@ -39,7 +41,7 @@
     </header>
     <main class="main-content" id="topo">
       <section class="home" id="home">
-        <div class="home__content">
+        <div class="home__content" data-aos="fade-up" data-aos-duration="2500">
           <h1 class="home__title">Jamilly Ferreira</h1>
           <h3 class="home__subtitle">Desenvolvedora <span>Front-End</span></h3>
           <p class="home__descripiton">
@@ -62,21 +64,23 @@
             </a>
           </div>
         </div>
-        <img class="home-image-hero" src="assets/images/hand-coding-animate.svg" alt="Imagem hand condig">
+        <img class="home-image-hero" data-aos="fade-up" data-aos-duration="2000" src="assets/images/hand-coding-animate.svg" alt="Imagem hand condig">
       </section>
 
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="project__title">Projetos</h2>
         <p class="projects__selection">Selecione um projeto</p>
         <div class="projects__group">
 
-          <article class="project-card">
+          <article class="project-card"  data-aos="fade-up"data-aos-duration="1000"
+            data-aos-delay="200" data-aos-anchor-placement="center-bottom">
             <div class="project-card__content">
-              <div class="project-card__preview">
-                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
-                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
-              </div>
-
+              <a href="todoList.html">
+                <div class="project-card__preview">
+                  <img src="assets/images/todo-list-macbook.png" class="image-desktop" alt="desktop mode dark">
+                  <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+                </div>
+              </a>
               <div class="project-card__info">
                 <h3 class="project-card__title">Todo List</h3>
                   <div class="project-card__tags">
@@ -100,12 +104,14 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-aos="fade-up"data-aos-duration="1000"
+            data-aos-delay="300" data-aos-anchor-placement="center-bottom">
             <div class="project-card__content">
-              <div class="project-card__preview">
-                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
-                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
-              </div>
+              <a href="#">
+                <div class="project-card__preview">
+                  <img src="assets/images/portfolio-macbook.png" class="image-desktop" alt="desktop mode dark">
+                </div>
+              </a>
               <div class="project-card__info">
                 <h3 class="project-card__title">Portfólio</h3>
                 <div class="project-card__tags">
@@ -119,7 +125,7 @@
                     <i class="fa-solid fa-eye"></i>
                     Previa
                   </a>
-                  <a href="#" class="btn btn-github">
+                  <a href="https://github.com/jamillyferreira/portfolio-jamilly-ferreira" class="btn btn-github">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                   </a>
@@ -127,26 +133,29 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
+
+          <article class="project-card"  data-aos="fade-up"data-aos-duration="1000"
+            data-aos-delay="400" data-aos-anchor-placement="center-bottom">
             <div class="project-card__content">
-              <div class="project-card__preview">
-                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
-                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              <a href="cartDoce.html">
+                <div class="project-card__preview">
+                <img src="assets/images/carrinho-doce-macbook.png" class="image-desktop" alt="desktop mode dark">
               </div>
+              </a>
               <div class="project-card__info">
-                <h3 class="project-card__title">Projeto 3</h3>
+                <h3 class="project-card__title">Carrinho Doce</h3>
                 <div class="project-card__tags">
                   <span class="tag tag-html">HTML</span>
                   <span class="tag tag-css">CSS</span>
                   <span class="tag tag-javascript">JS</span>
                 </div>
-                <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
+                <p class="project-card__text">Projeto simples de lista de produtos com carrinho.</p>
                 <div class="project-card__actions">
-                  <a href="#" class="btn btn-preview">
+                  <a href="https://product-list-with-cart-eosin.vercel.app/" target="_blank" class="btn btn-preview">
                     <i class="fa-solid fa-eye"></i>
                     Previa
                   </a>
-                  <a href="#" class="btn btn-github">
+                  <a href="https://github.com/jamillyferreira/product-list-with-cart" class="btn btn-github">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                   </a>
@@ -154,14 +163,18 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
+
+          <article class="project-card"  data-aos="fade-up"data-aos-duration="1000"
+            data-aos-delay="500" data-aos-anchor-placement="center-bottom">
             <div class="project-card__content">
-              <div class="project-card__preview">
-                <img src="assets/images/Macbook-Air-127.0.0.1-front.png" class="image-desktop" alt="desktop mode dark">
-                <img src="assets/images/iPhone-13-dark.png" class="image-mobile" alt="desktop mode light">
+              <a href="digitalMenuCart.html">
+                <div class="project-card__preview">
+                <img src="assets/images/dev-burguer-macbook.png" class="image-desktop" alt="desktop mode dark">
+                <img src="assets/images/dev-burguer-mobile-2.png" class="image-mobile" alt="desktop mode light">
               </div>
+              </a>
               <div class="project-card__info">
-                <h3 class="project-card__title">Projeto 4</h3>
+                <h3 class="project-card__title">Dev Burguer</h3>
                 <div class="project-card__tags">
                   <span class="tag tag-html">HTML</span>
                   <span class="tag tag-css">CSS</span>
@@ -169,11 +182,11 @@
                 </div>
                 <p class="project-card__text">Aplicação simples de lista de tarefas.</p>
                 <div class="project-card__actions">
-                  <a href="#" class="btn btn-preview">
+                  <a href="https://digital-menu-cart.vercel.app/" target="_blank" class="btn btn-preview">
                     <i class="fa-solid fa-eye"></i>
                     Previa
                   </a>
-                  <a href="#" class="btn btn-github">
+                  <a href="https://github.com/jamillyferreira/digital-menu-cart" target="_blank" class="btn btn-github">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                   </a>
@@ -190,9 +203,10 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <p class="footer__text">
-          <em>Feito com dedicação, café e um pouco de código!</em>
+          <em>Feito com dedicação, café e um pouco de código!</em> <br>
+          Ultima atualização: 12/05/2025
         </p>
         <nav class="footer__nav">
           <ul class="footer__list">
@@ -213,5 +227,6 @@
           </ul>
         </nav>   
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

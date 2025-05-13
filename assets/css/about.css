@@ -137,10 +137,9 @@ body.dark-mode {
   }
 }
 
-/* Ajustes para tablets em modo paisagem ou telas maiores que tablets mas menores que desktop */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .header {
-    padding: 1rem 8rem;
+    justify-content: space-between;
   }
   .main-profile {
     width: 80%;

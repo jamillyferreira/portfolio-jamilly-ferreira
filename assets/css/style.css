@@ -203,7 +203,7 @@ body {
   }
 }
 .projects {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 .project__title {
   color: var(--text-title);
@@ -280,7 +280,7 @@ body {
   z-index: 2;
 }
 .project-card__preview .image-desktop {
-  width: 85%;
+  width: 90%;
   z-index: 1;
 }
 .project-card__title {
@@ -386,6 +386,7 @@ body {
 .footer__text {
   color: var(--text-body);
   font-size: 14px;
+  text-align: center;
 }
 .footer__nav .footer__list {
   display: flex;
@@ -403,7 +404,9 @@ body {
 .footer__item .footer__item-link:hover {
   color: var(--color-primary);
 }
-
+a {
+  text-decoration: none;
+}
 /* RESPONSIVIDADE PARA MOBILE */
 @media screen and (max-width: 767px) {
   body {

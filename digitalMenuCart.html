@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dev Burguer</title>
+    <script src="assets/js/scripts.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/todoList.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
+        <a href="index.html" class="logo__text">JF</a>
+      </div>
+      <nav
+        class="nav-menu"
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="togglDarkMode"
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </header>
+    <main class="main-project">
+      <section class="project-section project-section--hero">
+        <div class="project-hero">
+          <h1
+            class="project-hero__title"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            Cardapio online <br />
+            Dev Burguer
+          </h1>
+          <div
+            class="project-hero__image-wrapper"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <img
+              class="project-hero__image-desktop"
+              src="assets/images/dev-burguer-macbook.png"
+              alt="imagem desktop"
+            />
+            <img
+              class="project-hero__image-mobile"
+              src="assets/images/dev-burguer-mobile-2.png"
+              alt="imagem mobile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="project-section project-section--overview">
+        <div
+          class="project-section__container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+        >
+          <p
+            class="project-section__subheading"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            Sobre o projeto
+          </p>
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            Cardápio digital para lanchonete
+          </h2>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Um cardápio online interativo para a lanchonete ficticia DEV
+            Burguer, onde os clientes podem visualizar o menu, adicionar itens
+            ao carrinho e finalizar pedidos diretamente pelo WhatsApp.
+          </p>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            Este projeto foi desenvolvido acompanhando um tutorial no YouTube,
+            com o objetivo de criar uma solução prática para pequenos negócios
+            do ramo alimentício. <br />
+            Implementei funcionalidades como carrinho de compras dinâmico,
+            validação de horário de funcionamento e integração com WhatsApp para
+            envio de pedidos.
+          </p>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h3 class="project-grid__heading">Ferramentas Usadas</h3>
+              <p class="project-grid__content">
+                Figma (para o design) <br />
+                HTML, CSS, Javascript, Tailwind Css
+              </p>
+            </div>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h3 class="project-grid__heading">Cronograma</h3>
+              <p class="project-grid__content">2 dias (Fevereiro-2025)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="project-section project-section--features">
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Recursos & Experiência
+          </h2>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-offset="300"
+            >
+              <ul class="feature-list">
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  <span class="feature-list__title">Carrinho de compras: </span>
+                  <span class="feature-list__description"
+                    >Adição, remoção e atualização dinâmica dos itens
+                    selecionados..</span
+                  >
+                </li>
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  <span class="feature-list__title"
+                    >Cardápio digital completo:</span
+                  >
+                  <span class="feature-list__description"
+                    >Exibição de produtos com imagens, descrições e
+                    preços.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-offset="300"
+            >
+              <ul class="feature-list">
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  <span class="feature-list__title"
+                    >Verificação de horário:</span
+                  >
+                  <span class="feature-list__description"
+                    >Sistema que checa se a lanchonete está aberta ou fechada
+                    com base no horário atual.</span
+                  >
+                </li>
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  <span class="feature-list__title"
+                    >Integração com WhatsApp:</span
+                  >
+                  <span class="feature-list__description"
+                    >Envio automático do pedido completo diretamente para o
+                    WhatsApp do estabelecimento.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="challenges"
+        class="project-section project-section--challenges project-section--light"
+      >
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Desafio e Aprendizado
+          </h2>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h3 class="project-grid__heading">Desafios</h3>
+              <ul class="challenge-list">
+                <li
+                  class="challenge-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  Implementar a lógica de atualização dinâmica do carrinho mantendo a consistência dos dados.
+                </li>
+                <li
+                  class="challenge-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  Criar um sistema de validação de endereço que garanta informações completas antes do envio do pedido.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h3 class="project-grid__heading">O que aprendi</h3>
+              <ul class="learning-list">
+                <li
+                  class="learning-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                Aprimorei minhas habilidades em TailwindCSS para criar interfaces adaptáveis a diferentes dispositivos.
+                </li>
+                <li
+                  class="learning-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                Aprendi a integrar sistemas web com aplicações de mensagens para criar fluxos de pedido completos.
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="project-section project-section-results">
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            O Projeto Final
+          </h2>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            O resultado é uma aplicação limpa, intuitiva e funcional, com foco
+            na usabilidade e na experiência do usuário em diferentes
+            dispositivos e modos de visualização.
+          </p>
+          <div class="result__gallary">
+            <img
+              src="assets/images/dev-burguer-mobile-2.png"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-anchor-placement="center-bottom"
+              alt=""
+            />
+            <img
+              src="assets/images/dev-burguer-mobile-1.png"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-anchor-placement="center-bottom"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <p class="footer__text">
+        <em>Feito com dedicação, café e um pouco de código!</em> <br />
+        Ultima atualização: 12/05/2025
+      </p>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://www.linkedin.com/in/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://github.com/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://jamillyferreira039@gmail.com"
+              target="_blank"
+            >
+              <i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

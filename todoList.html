@@ -1,301 +1,576 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <title>Todo list</title>
-  <script src="assets/js/scripts.js" defer></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/todoList.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__logo">
-      <h2 class="logo__text">Ferreira</h2>
-    </div>
-    <nav class="nav-menu">
-      <ul class="nav-menu__list">
-        <li class="nav-menu__item">
-          <a class="nav-menu__item-link" href="#">Projetos</a>
-        </li>
-        <li class="nav-menu__item">
-          <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
-        </li>
-        <li class="nav-menu__item">
-          <a class="nav-menu__item-link" href="#contato">Contato</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="togglDarkMode">
-      <i class="fa-solid fa-sun icon-sun"></i>
-    </button>
-  </header>
-  <main class="main-project">
-    <section class="project-section project-section--hero">
-      <div class="project-hero">
-        <h1 class="project-hero__title">Todo list <br> interativo</h1>
-        <div class="project-hero__image-wrapper">
-          <img class="project-hero__image-desktop" src="assets/images/Macbook-Air-127.0.0.1-front.png" alt="imagem desktop">
-          <img class="project-hero__image-mobile" src="assets/images/mobile-mode-dark.png" alt="">
-        </div>
+    <title>Todo list</title>
+    <script src="assets/js/scripts.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/todoList.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
+        <a href="index.html" class="logo__text">JF</a>
       </div>
-    </section>
+      <nav
+        class="nav-menu"
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="togglDarkMode"
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </header>
+    <main class="main-project">
+      <section class="project-section project-section--hero">
+        <div class="project-hero">
+          <h1
+            class="project-hero__title"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            Todo list <br />
+            interativo
+          </h1>
+          <div
+            class="project-hero__image-wrapper"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <img
+              class="project-hero__image-desktop"
+              src="assets/images/Macbook-Air-127.0.0.1-front.png"
+              alt="imagem desktop"
+            />
+            <img
+              class="project-hero__image-mobile"
+              src="assets/images/mobile-mode-dark.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
-    <section id="overview" class="project-section project-section--overview">
-      <div class="project-section__container">
-        <p class="project-section__subheading">Sobre o projeto</p>
-        <h2 class="project-section__heading">Uma solução para gestão de tarefas</h2>
-        <p class="project-section__text">
-          Uma aplicação de lista de tarefas (To-Do List) com funcionalidades básicas e avançadas, como adicionar, marcar, remover e filtrar tarefas.
-        </p>
-        <p class="project-section__text">
-          Este projeto foi um desafio pessoal que desenvolvi para praticar e consolidar meus conhecimentos em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> . <br> Criei tudo do zero, desde a interface no Figma até a implementação das funcionalidades. O objetivo era criar uma aplicação simples, porém completa, que oferecesse uma boa experiência ao usuário, tanto no desktop quanto no mobile.
-        </p>
-        <div class="project-grid">
-          <div class="project-grid__column">
-            <h3 class="project-grid__heading">Ferramentas Usadas</h3>
-            <p class="project-grid__content">Figma (para o design) <br>
-            HTML, CSS, Javascript</p>
-          </div>
-          <div class="project-grid__column">
-            <h3 class="project-grid__heading">Cronograma</h3>
-            <p class="project-grid__content">1 semana (Fevereiro-2025)</p>
+      <section id="overview" class="project-section project-section--overview">
+        <div
+          class="project-section__container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+        >
+          <p
+            class="project-section__subheading"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            Sobre o projeto
+          </p>
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            Uma solução para gestão de tarefas
+          </h2>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Uma aplicação de lista de tarefas (To-Do List) com funcionalidades
+            básicas e avançadas, como adicionar, marcar, remover e filtrar
+            tarefas.
+          </p>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            Este projeto foi um desafio pessoal que desenvolvi para praticar e
+            consolidar meus conhecimentos em <span>HTML</span>,
+            <span>CSS</span> e <span>JavaScript</span> . <br />
+            Criei tudo do zero, desde a interface no Figma até a implementação
+            das funcionalidades. O objetivo era criar uma aplicação simples,
+            porém completa, que oferecesse uma boa experiência ao usuário, tanto
+            no desktop quanto no mobile.
+          </p>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h3 class="project-grid__heading">Ferramentas Usadas</h3>
+              <p class="project-grid__content">
+                Figma (para o design) <br />
+                HTML, CSS, Javascript
+              </p>
+            </div>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h3 class="project-grid__heading">Cronograma</h3>
+              <p class="project-grid__content">1 semana (Fevereiro-2025)</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="features" class="project-section project-section--features">
-      <div class="project-section__container">
-        <h2 class="project-section__heading">Recursos & Experiência</h2>
-        <div class="project-grid">
-          <div class="project-grid__column">
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <span class="feature-list__title">Adicionar, marcar e remover tarefas:</span>
-                <span class="feature-list__description">Interface intuitiva para gerenciar tarefas de forma fácil e rápida.</span>
-              </li>
-              <li class="feature-list__item">
-                <span class="feature-list__title">Filtro de tarefas:</span>
-                <span class="feature-list__description">Opções para visualizar todas as tarefas, apenas as pendentes ou apenas as concluídas.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="project-grid__column">
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <span class="feature-list__title">Dark mode automático:</span>
-                <span class="feature-list__description">A aplicação se adapta ao tema do sistema do usuário (light ou dark).</span>
-              </li>
-              <li class="feature-list__item">
-                <span class="feature-list__title">Persistência de dados:</span>
-                <span class="feature-list__description">As tarefas são salvas no localStorage, garantindo que não sejam perdidas ao atualizar a página.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section id="challenges" class="project-section project-section--challenges project-section--light">
-      <div class="project-section__container">
-        <h2 class="project-section__heading">Desafio e Aprendizado</h2>
-        <div class="project-grid">
-          <div class="project-grid__column">
-            <h3 class="project-grid__heading">Desafios</h3>
-            <ul class="challenge-list">
-              <li class="challenge-list__item">Implementar o dark mode automático exigiu uma pesquisa sobre como detectar as preferências do sistema do usuário.</li>
-              <li class="challenge-list__item">Garantir que as tarefas fossem salvas corretamente no localStorage e atualizadas em tempo real foi um desafio técnico interessante.</li>
-            </ul>
-          </div>
-          <div class="project-grid__column">
-            <h3 class="project-grid__heading">O que aprendi</h3>
-            <ul class="learning-list">
-              <li class="learning-list__item">Aprendi a manipular o localStorage de forma eficiente e a criar interfaces que se adaptam ao tema do sistema.</li>
-              <li class="learning-list__item">Melhorei minhas habilidades em JavaScript puro para criar funcionalidades dinâmicas sem depender de bibliotecas.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="creative-process" 
-    class="project-section project-section--creative-process">
-      <div class="project-section__container">
-        <h2 class="project-section__heading">Processo criativo</h2>
-        <p class="project-section__text">
-          No wireframe inicial, o projeto tinha um design mais simples, com o dark mode sendo ativado apenas automaticamente, com base nas preferências do sistema do usuário. Durante o desenvolvimento, decidi adicionar um botão de alternar tema para dar mais controle ao usuário.
-        </p>
-        
-        <h2 class="design-overview__heading">Estrutura e Identidade Visual</h2>
-        <p class="project-section__text">Visão geral da estrutura e identidade visual do projeto, incluindo wireframe, tipografia e paleta de cores. O design do aplicativo foi cuidadosamente planejado para garantir uma experiência intuitiva e agradável, com transições suaves entre os modos claro e escuro.</p>
-        <div class="design-process">
-          <div class="design-process__step">
-            <div class="step__number">01</div>
-            <h3 class="step__title">Wireframing</h3>
-            <p class="step__description">Definição da estrutura básica e fluxo de interação</p>
-          </div>
-          <div class="design-process__step">
-            <div class="step__number">02</div>
-            <h3 class="step__title">Visual Design</h3>
-            <p class="step__description">Aplicação de cores, tipografia e elementos visuais</p>
-          </div>
-          <div class="design-process__step">
-            <div class="step__number">03</div>
-            <h3 class="step__title">Prototipagem</h3>
-            <p class="step__description">Criação de protótipos para testes</p>
-          </div>
-        </div>
-        <hr>
-        <div class="design-showcase subsection">
-          <h3 class="design-showcase__title">Wireframes</h3>
-          <p class="design-showcase__description">Estrutura básica da aplicação em diferentes dispositivos.</p>        
-          <div class="device-showcase">
-          <div class="desktop-view">
-            <div class="device-frame">
-              <img src="assets/images/wireframe-01.png" class="wireframe-desktop" alt="">
+      <section id="features" class="project-section project-section--features">
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Recursos & Experiência
+          </h2>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-offset="300"
+            >
+              <ul class="feature-list">
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  <span class="feature-list__title"
+                    >Adicionar, marcar e remover tarefas:</span
+                  >
+                  <span class="feature-list__description"
+                    >Interface intuitiva para gerenciar tarefas de forma fácil e
+                    rápida.</span
+                  >
+                </li>
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  <span class="feature-list__title">Filtro de tarefas:</span>
+                  <span class="feature-list__description"
+                    >Opções para visualizar todas as tarefas, apenas as
+                    pendentes ou apenas as concluídas.</span
+                  >
+                </li>
+              </ul>
             </div>
-            <h4 class="device-label">Desktop</h4>
-            <p>Layout otimizado para telas maiores</p>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-offset="300"
+            >
+              <ul class="feature-list">
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  <span class="feature-list__title">Dark mode automático:</span>
+                  <span class="feature-list__description"
+                    >A aplicação se adapta ao tema do sistema do usuário (light
+                    ou dark).</span
+                  >
+                </li>
+                <li
+                  class="feature-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  <span class="feature-list__title"
+                    >Persistência de dados:</span
+                  >
+                  <span class="feature-list__description"
+                    >As tarefas são salvas no localStorage, garantindo que não
+                    sejam perdidas ao atualizar a página.</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="mobile-view">
-            <img src="assets/images/wireframe-mobile.png" class="wireframe-mobile" alt="">
-            <h4 class="device-label">Mobile</h4>
-            <p>Experiência adaptada para dispositivos móveis.</p>
-          </div>
-          </div>
-        </div>
-        <hr>
-        <div class="design-showcase subsection">
-          <h3 class="design-showcase__title">Design Aplicado - Modo Claro</h3>
-          <p class="design-showcase__description">Interface limpa e minimalista para uso diurno.</p>
-          <div class="device-showcase">
-            <div class="desktop-view">
-              <div class="device-frame">
-                <img src="assets/images/design-desktop-ligth.png" class="design-desktop-img" alt="">
-              </div>
-              <h4 class="device-label">Desktop</h4>
+      <section
+        id="challenges"
+        class="project-section project-section--challenges project-section--light"
+      >
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Desafio e Aprendizado
+          </h2>
+          <div class="project-grid">
+            <div
+              class="project-grid__column"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h3 class="project-grid__heading">Desafios</h3>
+              <ul class="challenge-list">
+                <li
+                  class="challenge-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  Implementar o dark mode automático exigiu uma pesquisa sobre
+                  como detectar as preferências do sistema do usuário.
+                </li>
+                <li
+                  class="challenge-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  Garantir que as tarefas fossem salvas corretamente no
+                  localStorage e atualizadas em tempo real foi um desafio
+                  técnico interessante.
+                </li>
+              </ul>
             </div>
-            <div class="mobile-view">
-              <div class="device-frame">
-                <div class="mobile-screens">
-                  <img src="assets/images/design-mobile-ligth-01.png" class="design-mobile-ligth" alt="">
-                  <img src="assets/images/design-mobile-ligth-02.png" class="design-mobile-ligth" alt="">
-                </div>
-              </div>
-              <h4 class="device-label">Mobile</h4>
-            </div>          
-          </div>            
-        </div>
-        <hr>
-        <div class="design-showcase subsection">
-        <h3 class="design-showcase__title">Design Aplicado - Modo Escuro</h3>
-        <p class="design-showcase__description">Interface com baixa emissão de luz para uso noturno.</p>
-          <div class="device-showcase">
-            <div class="desktop-view">
-              <div class="device-frame">
-                <img src="assets/images/design-desktop-dark.png" class="design-desktop-img" alt="">
-              </div>
-              <h4 class="device-label">Desktop</h4>
-            </div>
-            <div class="mobile-view">
-              <div class="device-frame">
-                <div class="mobile-screens">
-                  <img src="assets/images/design-mobile-dark-01.png" class="design-mobile-ligth" alt="">
-                  <img src="assets/images/design-mobile-dark-02.png" class="design-mobile-ligth" alt="">
-                </div>
-              </div>
-              <h4 class="device-label">Mobile</h4>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- Sistema de Design -->
-        <div class="design-system">
-          <h3 class="design-system__title">Sistema de Design</h3>
-          <p class="design-system__description">Elementos fundamentais que compõem a identidade visual do projeto.</p>
-          <div class="design-system__grid">
-            <div class="design-system__typography">
-              <h4>Tipografia</h4>
-              <p>Poppis</p>
-            </div>
-            <div class="design-system__colors">
-              <h4>Paleta de Cores</h4>
-              <div class="color-palette">
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#393838</span>
-                </div>
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#3da3c2</span>
-                </div>
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#F4F4F4</span>
-                </div>
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#343750</span>
-                </div>
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#232537</span>
-                </div>
-                <div class="color-palette__item">
-                  <div class="color-swatch"></div>
-                  <span class="color-code">#F8F8F8</span>
-                </div>
-              </div>
+            <div
+              class="project-grid__column"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h3 class="project-grid__heading">O que aprendi</h3>
+              <ul class="learning-list">
+                <li
+                  class="learning-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  Aprendi a manipular o localStorage de forma eficiente e a
+                  criar interfaces que se adaptam ao tema do sistema.
+                </li>
+                <li
+                  class="learning-list__item"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  Melhorei minhas habilidades em JavaScript puro para criar
+                  funcionalidades dinâmicas sem depender de bibliotecas.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-   
-    <section id="results" class="project-section project-section-results">
-      <div class="project-section__container">
-        <h2 class="project-section__heading">O Projeto Final</h2>
-        <p class="project-section__text">
-          O resultado é uma aplicação limpa, intuitiva e funcional, com foco na usabilidade e na experiência do usuário em diferentes dispositivos e modos de visualização.
+      </section>
+
+      <section
+        id="creative-process"
+        class="project-section project-section--creative-process"
+      >
+        <div class="project-section__container">
+          <h2 class="project-section__heading" data-aos="fade-up"
+          data-aos-duration="1000">
+            Processo criativo
+          </h2>
+          <p class="project-section__text" data-aos="fade-up"
+          data-aos-delay="200" data-aos-duration="1000">
+            No wireframe inicial, o projeto tinha um design mais simples, com o
+            dark mode sendo ativado apenas automaticamente, com base nas
+            preferências do sistema do usuário. Durante o desenvolvimento,
+            decidi adicionar um botão de alternar tema para dar mais controle ao
+            usuário.
+          </p>
+
+          <h2 class="design-overview__heading" data-aos="fade-up"
+          data-aos-delay="100" data-aos-duration="1000">
+          Estrutura e Identidade Visual
+          </h2>
+          <p class="project-section__text" data-aos="fade-up"
+          data-aos-delay="200" data-aos-duration="1000">
+            Visão geral da estrutura e identidade visual do projeto, incluindo
+            wireframe, tipografia e paleta de cores. O design do aplicativo foi
+            cuidadosamente planejado para garantir uma experiência intuitiva e
+            agradável, com transições suaves entre os modos claro e escuro.
+          </p>
+          <div class="design-process">
+            <div class="design-process__step"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" data-aos-delay="100">
+              <div class="step__number">01</div>
+              <h3 class="step__title">Wireframing</h3>
+              <p class="step__description"> Definição da estrutura básica e fluxo de interação</p>
+            </div>
+            <div
+              class="design-process__step"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="step__number">02</div>
+              <h3 class="step__title">Visual Design</h3>
+              <p class="step__description">
+                Aplicação de cores, tipografia e elementos visuais
+              </p>
+            </div>
+            <div
+              class="design-process__step"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="step__number">03</div>
+              <h3 class="step__title">Prototipagem</h3>
+              <p class="step__description">Criação de protótipos para testes</p>
+            </div>
+          </div>
+          <hr />
+          <div class="design-block design-block--wireframe">
+            <h3 class="design-block__title" data-aos="fade-up"
+            data-aos-duration="1000">Wireframes</h3>
+            <p class="design-block__description" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100">
+              Estrutura básica da aplicação em diferentes dispositivos.
+            </p>
+            <div class="design-block__gallary design__gallary--wireframes"
+            data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">
+              <img src="assets/images/wireframe-01.png"
+              class="wireframe-desktop" data-aos="zoom-in"
+              data-aos-delay="200" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" alt="" />
+
+              <img src="assets/images/wireframe-mobile.png"
+              class="wireframe-mobile" data-aos="zoom-in"
+              data-aos-delay="400" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" alt="" />
+            </div>
+          </div>
+          <hr />
+          <!-- Design Aplicado - Desktop -->
+          <div class="design-block design-block--applied-desktop">
+            <h3 class="design-block__title" data-aos="fade-up"
+            data-aos-duration="1000">
+              Design Aplicado - Desktop
+            </h3>
+            <p class="design-block__description"
+            data-aos="fade-up"data-aos-delay="100"
+            data-aos-duration="1000">
+              Interface limpa e minimalista para uso diurno.
+            </p>
+            <div class="design-block__gallary design-block__gallary--desktop" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+              <img src="assets/images/design-desktop-ligth.png"
+              class="design-desktop-img" data-aos="fade-right"
+              data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom"alt=""/>
+
+              <img src="assets/images/design-desktop-dark.png"
+              class="design-desktop-img" data-aos="fade-left"
+              data-aos-delay="300" data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom" alt=""/>
+            </div>
+          </div>
+          <hr />
+          <!-- Design Aplicado - Mobile -->
+          <div class="design-block design-block--applied-mobile">
+            <h3 class="design-block__title" data-aos="fade-up"
+            data-aos-duration="1000">
+              Design Aplicado - Mobile
+            </h3>
+            <p class="design-block__description" data-aos="fade-up"
+            data-aos-delay="100" data-aos-duration="1000">
+              Interface com baixa emissão de luz para uso noturno.
+            </p>
+            <div class="design-block__gallary design-block__gallary--mobile" data-aos="fade-up"
+            data-aos-delay="200" data-aos-duration="1200">
+              <img src="assets/images/design-mobile-dark-01.png"
+              class="design-mobile-img" data-aos="fade-up-right"
+              data-aos-delay="200" data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom" alt=""/>
+
+              <img src="assets/images/design-mobile-dark-02.png"
+              class="design-mobile-img" data-aos="fade-up-left"
+              data-aos-delay="300" data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom" alt=""/>
+
+              <img src="assets/images/design-mobile-ligth-01.png"
+              class="design-mobile-img" data-aos="fade-up"
+              data-aos-delay="400" data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom" alt=""/>
+
+              <img src="assets/images/design-mobile-ligth-02.png"
+              class="design-mobile-img" data-aos="fade-up-left"
+              data-aos-delay="500" data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom" alt=""/>
+
+            </div>
+          </div>
+          <hr />
+
+          <!-- Sistema de Design -->
+          <div class="design-system">
+            <h3 class="design-system__title"
+            data-aos="fade-up" data-aos-duration="1000">
+              Sistema de Design
+            </h3>
+            <p class="design-system__description" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100">
+              Elementos fundamentais que compõem a identidade visual do projeto.
+            </p>
+            <div class="design-system__grid">
+              <div class="design-system__typography" data-aos="fade-right"
+              data-aos-duration="1200" data-aos-delay="200" >
+                <h4 data-aos="fade-up" data-aos-duration="800"
+                data-aos-delay="300">Tipografia</h4>
+                <p data-aos="fade-up" data-aos-duration="800"
+                data-aos-delay="400">Poppis</p>
+              </div>
+              <div class="design-system__colors" data-aos="fade-left"
+              data-aos-duration="1200" data-aos-delay="200">
+                <h4 data-aos="fade-up" data-aos-duration="800" 
+                data-aos-delay="300">Paleta de Cores</h4>
+
+                <div class="color-palette">
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="300">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#393838</span>
+                  </div>
+
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="350">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#3da3c2</span>
+                  </div>
+
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="400">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#F4F4F4</span>
+                  </div>
+
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="450">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#343750</span>
+                  </div>
+
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="500">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#232537</span>
+                  </div>
+
+                  <div class="color-palette__item" data-aos="zoom-in"
+                  data-aos-duration="600" data-aos-delay="550">
+                    <div class="color-swatch"></div>
+                    <span class="color-code">#F8F8F8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="project-section project-section-results">
+        <div class="project-section__container">
+          <h2 class="project-section__heading"
+          data-aos="fade-up" data-aos-duration="1000">
+            O Projeto Final
+          </h2>
+          <p class="project-section__text" data-aos="fade-up" data-aos-duration="1000">
+            O resultado é uma aplicação limpa, intuitiva e funcional, com foco
+            na usabilidade e na experiência do usuário em diferentes
+            dispositivos e modos de visualização.
+          </p>
+          <div class="result__gallary">
+            <img src="assets/images/mockup-mobile-dark-01.png"
+            data-aos="fade-up"data-aos-duration="1000"
+            data-aos-delay="200" data-aos-anchor-placement="center-bottom" alt=""/>
+
+            <img src="assets/images/mockup-mobile-dark-02.png" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="300"
+            data-aos-anchor-placement="center-bottom" alt="" />
+
+            <img src="assets/images/mockup-mobile-ligth-01.png" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="400"
+            data-aos-anchor-placement="center-bottom" alt="" />
+
+            <img src="assets/images/mockup-mobile-ligth-02.png" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="500"
+            data-aos-anchor-placement="center-bottom" alt="" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__text">
+          <em>Feito com dedicação, café e um pouco de código!</em>
         </p>
-        <div class="result__showcase">
-          <div class="result-mode">
-            <h3 class="result-mode__title">Modo Escuro</h3>
-            <div class="result-mode__images">
-              <img src="assets/images/mockup-mobile-dark-01.png" alt="">
-              <img src="assets/images/mockup-mobile-dark-02.png" alt="">
-            </div>
-          </div>
-          <div class="result-mode">
-            <h3 class="result-mode__title">Modo Claro</h3>
-            <div class="result-mode__images">
-              <img src="assets/images/mockup-mobile-ligth-01.png" alt="">
-              <img src="assets/images/mockup-mobile-ligth-02.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project-section project-section--cta">
-      <div class="project-section__container">
-        <h2 class="project-section__heading">Interessado em mais projetos?</h2>
-        <p class="project-section__text">Confira meus outros trabalhos ou entre em contato para conversarmos sobre possíveis colaborações.
-        </p>
-        <div class="cta-buttons">
-          <a href="#" class="btn btn-primary">Ver mais projetos</a>
-          <a href="#contato">Entrar em contato</a>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://www.linkedin.com/in/jamillyferreira" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://github.com/jamillyferreira" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="https://jamillyferreira039@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i></a>
+            </li> 
+          </ul>
+        </nav>   
+    </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
