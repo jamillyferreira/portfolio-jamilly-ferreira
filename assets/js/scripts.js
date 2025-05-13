@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const data = new Date(document.lastModified);
+const dataUpdate = document.querySelector(".data-update");
+if (dataUpdate) {
+  dataUpdate.textContent = `Última atualização: ${data.toLocaleDateString(
+    "pt-BR"
+  )} • v1.1`;
+}
+
 const header = document.querySelector(".header");
 
 const darkModeButton = document.querySelector(".togglDarkMode");
