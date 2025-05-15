@@ -1,33 +1,3 @@
-:root {
-  /* color primary */
-  --color-primary: #7368ff;
-
-  /* colors for light mode */
-  --bg-body: #f4f4f4;
-  --bg-surface: #fcfcfc;
-  --text-title: #3e3c3c;
-  --text-strong: #3e3c3c;
-  --text-body: #858585;
-  --text-light: #f6f6f6;
-  --border-color: #9191917a;
-  --card-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-  --spacing-section: 5rem;
-  --transition-default: all 0.3s ease;
-}
-body.dark-mode {
-  --bg-body: #040404;
-  --bg-surface: #1c1c1c;
-  --text-title: #f6f6f6;
-  --text-body: #b3b3b3;
-  --text-medium: #3e3e3e;
-  --border-color: #3d3d3d;
-  --card-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-body {
-  color: var(--text-body);
-}
-
 .main-project {
   width: 100%;
   margin: 0 auto;
@@ -57,7 +27,7 @@ body {
   border-radius: 2px;
 }
 .project-section__subheading {
-  color: var(--color-primary);
+  color: var(--text-body);
   font-size: 14px;
   margin-bottom: 2rem;
 }
@@ -111,9 +81,7 @@ body {
   width: 100%;
   background-color: var(--bg-surface);
 }
-.project-section__text span {
-  color: var(--color-primary);
-}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -153,7 +121,6 @@ body {
   color: var(--color-primary);
 }
 .feature-list__title {
-  color: var(--text-medium);
   font-weight: 600;
 }
 
@@ -168,11 +135,13 @@ body {
   margin: 6rem 0;
 }
 .design-process__step {
-  background-color: #3e3c3c;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
   text-align: center;
   width: 28%;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 .step__number {
   background-color: var(--color-primary);
@@ -189,11 +158,11 @@ body {
 }
 .step__title {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: var(--text-title);
   margin-bottom: 0.6rem;
 }
 .step__description {
-  color: var(--text-light);
+  color: var(--text-body);
   font-size: 0.9rem;
 }
 .design-block {
@@ -246,9 +215,9 @@ body {
   width: 100%;
   max-width: 230px;
 } */
-.design-block__gallary .design-preview-desktop {
+/* .design-block__gallary .design-preview-desktop {
   max-width: 700px;
-}
+} */
 
 .design-system__title {
   font-size: 24px;

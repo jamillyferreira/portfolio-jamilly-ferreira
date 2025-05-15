@@ -1,96 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Sobre mim</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/about.css" />
-    <script src="assets/js/scripts.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous"referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="assets/js/scripts.js" defer></script>
+  <title>Sobre mim</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <a href="index.html" class="logo__text">JF</a>
-      </div>
-      <nav class="nav-menu">
-        <ul class="nav-menu__list">
-          <li class="nav-menu__item">
-            <a class="nav-menu__item-link" href="index.html">Projetos</a>
+  <header class="header">
+  <div class="header__logo">
+    <h2 class="logo__text">JF</h2>
+  </div>
+  <nav class="nav-menu">
+    <ul class="nav-menu__list">
+      <li class="nav-menu__item">
+        <a class="nav-menu__item-link" href="index.html">Projetos</a>
+      </li>
+      <li class="nav-menu__item">
+        <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+      </li>
+      <li class="nav-menu__item dropdown">
+        <button class="dropdown-toggle">Contato</button>
+        <ul class="dropdown-menu">
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
           </li>
-          <li class="nav-menu__item">
-            <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+          <li>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank">LinkedIn</a>
           </li>
-          <li class="nav-menu__item dropdown">
-            <button class="dropdown-toggle">Contato</button>
-            <ul class="dropdown-menu">
-              <li>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
-              </li>
-              <li>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <a
-                  href="https://www.linkedin.com/in/jamillyferreira/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com" target="_blank"
-                  >Gmail</a
-                >
-              </li>
-              <li>
-                <i class="fa-solid fa-file"></i>
-                <a href="assets/jamilly-ferreira-cv.pdf" target="_blank"
-                  >Currículo</a
-                >
-              </li>
-            </ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-file"></i>
+            <a href="assets/jamilly-ferreira-cv.pdf" target="_blank">Currículo</a>
           </li>
         </ul>
-      </nav>
-      <button class="togglDarkMode">
-        <i class="fa-solid fa-sun icon-sun"></i>
-      </button>
-    </header>
-    <main class="main-profile">
-      <section class="profile">
-        <div class="profile__image">
-          <img src="assets/images/avatar.png" alt="Avatar" />
-        </div>
-        <div class="profile__info">
-          <h3 class="profile__greeting">Olá, Prazer em te conhecer! 👋</h3>
-          <p class="profile__description">
-            Meu nome é Jamilly, sou uma desenvolvedora front-end em formação e atualmente estou no 3º período de Análise e Desenvolvimento de Sistemas. Desde o meu primeiro "Hello, World!", descobri que programar é uma forma poderosa de transformar ideias em realidade, e é isso que me motiva a seguir em frente.
-          </p>
-          <p class="profile__description">
-            No momento, estou focada em desenvolvimento front-end, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar interfaces funcionais e intuitivas. Também trabalho com ferramentas como <strong>Git</strong> e <strong>GitHub</strong> para versionamento de código, o que me ajuda a manter meus projetos organizados e colaborativos. Recentemente, comecei a explorar <strong>React</strong>, <strong>Next.js</strong> e <strong>Tailwind CSS</strong>, e estou animada com as possibilidades que essas ferramentas oferecem para criar interfaces modernas, eficientes e visualmente atraentes.
-          </p>
-          <p class="profile__description">
-            Meu objetivo é desenvolver soluções que não apenas atendam às necessidades técnicas, mas que também ofereçam uma experiência excepcional ao usuário. Acredito que a tecnologia, quando bem aplicada, pode ser uma ferramenta poderosa para conectar pessoas e resolver problemas reais.
-          </p>
-          <p class="profile__description">
-            Estou sempre em busca de novos desafios e oportunidades para aprender e crescer. Se você está procurando alguém dedicada, curiosa e pronta para contribuir com projetos inovadores, adoraria trocar ideias e colaborar. Vamos construir algo incrível juntos? 😉
-          </p>
-          <p class="profile__description">Obrigada por reservar um tempo para ver meu portfólio!</p>
-      </section>
-      <section class="quick-links">
-        <ul class="quick-links__list">
-          <li class="quick-links__item"><a href="#" class="quick-links__link">LinkedIn</a></li>
-          <li class="quick-links__item"><a href="#" class="quick-links__link">E-mail</a></li>
-        </ul>
-      </section>
-    </main>
-    
-  </body>
+      </li>
+    </ul>
+  </nav>
+  <button class="toggleDarkMode"><i class="fa-solid fa-sun icon-sun"></i></button>
+</header>
+<main class="main-profile">
+  <section class="profile">
+    <div class="profile__image">
+      <img src="assets/images/avatar.png" alt="Avatar" />
+    </div>
+    <div class="profile__info">
+      <h3 class="profile__greeting">Olá, Prazer em te conhecer! 👋</h3>
+      <p class="profile__description">
+        Meu nome é Jamilly, sou uma desenvolvedora front-end em formação e atualmente estou no 3º período de Análise e Desenvolvimento de Sistemas. Desde o meu primeiro "Hello, World!", descobri que programar é uma forma poderosa de transformar ideias em realidade, e é isso que me motiva a seguir em frente.
+      </p>
+      <p class="profile__description">
+        No momento, estou focada em desenvolvimento front-end, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar interfaces funcionais e intuitivas. Também trabalho com ferramentas como <strong>Git</strong> e <strong>GitHub</strong> para versionamento de código, o que me ajuda a manter meus projetos organizados e colaborativos. Recentemente, comecei a explorar <strong>React</strong>, <strong>Next.js</strong> e <strong>Tailwind CSS</strong>, e estou animada com as possibilidades que essas ferramentas oferecem para criar interfaces modernas, eficientes e visualmente atraentes.
+      </p>
+      <p class="profile__description">
+        Meu objetivo é desenvolver soluções que não apenas atendam às necessidades técnicas, mas que também ofereçam uma experiência excepcional ao usuário. Acredito que a tecnologia, quando bem aplicada, pode ser uma ferramenta poderosa para conectar pessoas e resolver problemas reais.
+      </p>
+      <p class="profile__description">
+        Estou sempre em busca de novos desafios e oportunidades para aprender e crescer. Se você está procurando alguém dedicada, curiosa e pronta para contribuir com projetos inovadores, adoraria trocar ideias e colaborar. Vamos construir algo incrível juntos? 😉
+      </p>
+      <p class="profile__description">Obrigada por reservar um tempo para ver meu portfólio!</p>
+  </section>
+
+  <section class="quick-links">
+    <ul class="quick-links__list">
+      <li class="quick-links__item"><a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank" class="quick-links__link">LinkedIn</a></li>
+      <li class="quick-links__item"><a href="" class="quick-links__link">E-mail</a></li>
+    </ul>
+  </section>
+</main>
+</body>
 </html>

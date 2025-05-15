@@ -1,63 +1,91 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const isMobile = () => {
-    return (
-      window.innerWidth < 768 ||
-      navigator.userAgent.match(/Android/i) ||
-      navigator.userAgent.match(/webOS/i) ||
-      navigator.userAgent.match(/iPhone/i) ||
-      navigator.userAgent.match(/iPad/i) ||
-      navigator.userAgent.match(/iPod/i) ||
-      navigator.userAgent.match(/BlackBerry/i) ||
-      navigator.userAgent.match(/Windows Phone/i)
-    );
-  };
-
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    once: false,
-    mirror: true,
-    anchorPlacement: "top-bottom",
-    offset: 120,
-    delay: 0,
-    disable: isMobile(),
-    throttleDelay: 99,
-  });
-
-  window.addEventListener("resize", function () {
-    AOS.init({ disable: isMobile() });
-    AOS.refresh();
-  });
-
-  window.addEventListener("load", function () {
-    AOS.refresh();
-  });
-});
-
-const data = new Date(document.lastModified);
+const darkModeButton = document.querySelector(".toggleDarkMode");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
 const dataUpdate = document.querySelector(".data-update");
+const links = document.querySelectorAll("a[href]");
+const body = document.body;
+
+const updateIcon = (isDarkMode) => {
+  const icon = darkModeButton.querySelector("i");
+  if (!icon) return;
+  icon.classList.remove(isDarkMode ? "fa-sun" : "fa-moon");
+  icon.classList.add(isDarkMode ? "fa-moon" : "fa-sun");
+};
+
+const saveTheme = localStorage.getItem("theme");
+if (saveTheme === "dark") {
+  body.classList.add("dark-mode");
+  updateIcon(true);
+} else {
+  updateIcon(false);
+}
+
+const toggleTheme = () => {
+  body.classList.toggle("dark-mode");
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  updateIcon(isDarkMode);
+};
+
+const isMobile = () => {
+  return (
+    window.innerWidth < 768 ||
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(
+      navigator.userAgent
+    )
+  );
+};
+
+if (darkModeButton) {
+  darkModeButton.addEventListener("click", toggleTheme);
+}
+
+if (dropdownToggle) {
+  dropdownToggle.addEventListener("click", () => {
+    const menu = document.querySelector(".dropdown-menu");
+    menu.classList.toggle("visible");
+  });
+}
+
 if (dataUpdate) {
-  dataUpdate.textContent = `Última atualização: ${data.toLocaleDateString(
+  const lastModified = new Date(document.lastModified);
+  dataUpdate.textContent = `Última atualização: ${lastModified.toLocaleDateString(
     "pt-BR"
   )} • v1.1`;
 }
 
-const header = document.querySelector(".header");
+links.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    const href = link.getAttribute("href");
+    if (link.target === "_blank" || href.startsWith("#")) return;
+    e.preventDefault();
+    document.body.classList.add("fade-out");
 
-const darkModeButton = document.querySelector(".togglDarkMode");
-const toggleTheme = () => {
-  const body = document.body;
-  const icon = darkModeButton.querySelector("i");
-  body.classList.toggle("dark-mode");
+    setTimeout(() => {
+      window.location.href = href;
+    }, 300);
+  });
+});
 
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  if (isDarkMode) {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  } else {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  }
-};
-darkModeButton.addEventListener("click", toggleTheme);
+body.classList.add("loaded");
+
+// --- Inicialização de plugins ---
+AOS.init({
+  duration: 1000,
+  easing: "ease-in-out",
+  once: false,
+  mirror: true,
+  anchorPlacement: "top-bottom",
+  offset: 120,
+  delay: 0,
+  disable: isMobile(),
+  throttleDelay: 99,
+});
+
+window.addEventListener("resize", function () {
+  AOS.init({ disable: isMobile() });
+  AOS.refresh();
+});
+
+window.addEventListener("load", function () {
+  AOS.refresh();
+});

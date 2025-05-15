@@ -10,11 +10,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Todo list</title>
-    <script src="assets/js/scripts.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/project-details.css" />
+    <link rel="stylesheet" href="assets/css/sweetCart.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Todo list</title>
   </head>
   <body>
     <header class="header">
@@ -29,7 +31,7 @@
       >
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
-            <a class="nav-menu__item-link" href="#projects">Projetos</a>
+            <a class="nav-menu__item-link" href="index.html">Projetos</a>
           </li>
           <li class="nav-menu__item">
             <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
@@ -51,9 +53,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com" target="_blank"
-                  >Gmail</a
-                >
+                <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
               </li>
               <li>
                 <i class="fa-solid fa-file"></i>
@@ -66,7 +66,7 @@
         </ul>
       </nav>
       <button
-        class="togglDarkMode"
+        class="toggleDarkMode"
         data-aos="fade-down"
         data-aos-duration="800"
         data-aos-delay="200"
@@ -370,7 +370,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Processo criativo
+            Material Base
           </h2>
           <p
             class="project-section__text"
@@ -378,11 +378,29 @@
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            O design foi feito com base visual nos arquivos do Frontend Mentor,
-            sem uso do Figma ou wireframes formais. Ajustei tudo visualmente,
-            focando na responsividade e na organização do conteúdo. O projeto
-            foi feito no modo claro, sem suporte a dark mode.
+            Os recursos visuais foram disponibilizados previamente pelo desafio
+            do Frontend Mentor, incluindo imagens do layout. Não houve criação
+            própria de wireframes ou identidade visual. Além disso, optei por
+            adaptar toda a interface para o português, tornando a navegação mais
+            natural para o público local. O foco foi garantir responsividade,
+            boa usabilidade e organização do conteúdo, respeitando a estrutura
+            original fornecida. O projeto foi feito no modo claro, sem suporte a
+            dark mode.
           </p>
+          <figure
+            class="design-preview"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="assets/images/sweetCart/desktop-design-selected.jpg"
+              alt="Wireframe do projeto DevBurguer"
+            />
+            <figcaption>
+              Imagem de referência utilizada como base para o desenvolvimento.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -474,9 +492,8 @@
         <p class="footer__text">
           Feito com dedicação, café e um pouco de código!
         </p>
-        <span class="data-update">Última atualização: 12/05/2025 - v1.0</span>
+        <span class="data-update"></span>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

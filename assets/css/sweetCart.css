@@ -2,9 +2,10 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
-  margin-top: 1.5rem;
+  padding: 10px;
+  text-align: center;
 }
+
 .design-preview img {
   width: 100%;
   height: auto;
@@ -13,10 +14,10 @@
 }
 .result__gallary {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 4rem;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 3rem;
 }
 .result__gallary img {
   width: 100%;
@@ -39,14 +40,16 @@
     gap: 1rem;
   }
   .result__gallary img {
-    max-width: 150px;
+    max-width: 120px;
     width: 100%;
+  }
+  figcaption {
+    font-size: 12px;
   }
   hr {
     margin: 0rem 0 3rem 0rem;
   }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .result__gallary {
     flex-wrap: nowrap;

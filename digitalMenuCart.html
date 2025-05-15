@@ -10,12 +10,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Dev Burguer</title>
-    <script src="assets/js/scripts.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/project-details.css" />
-    <link rel="stylesheet" href="assets/css/digitalMenu.css">
+    <link rel="stylesheet" href="assets/css/digitalMenu.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Dev Burguer</title>
   </head>
   <body>
     <header class="header">
@@ -52,7 +53,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com" target="_blank"
+                <a href="mailto:jamillyferreira039@gmail.com"
                   >Gmail</a
                 >
               </li>
@@ -67,7 +68,7 @@
         </ul>
       </nav>
       <button
-        class="togglDarkMode"
+        class="toggleDarkMode"
         data-aos="fade-down"
         data-aos-duration="800"
         data-aos-delay="200"
@@ -135,7 +136,7 @@
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Um cardápio online interativo para a lanchonete ficticia DEV
+            Um cardápio online interativo para a lanchonete fictícia DEV
             Burguer, onde os clientes podem visualizar o menu, adicionar itens
             ao carrinho e finalizar pedidos diretamente pelo WhatsApp.
           </p>
@@ -336,6 +337,40 @@
           </div>
         </div>
       </section>
+      <section class="project-section">
+        <div class="project-section__container">
+          <h2
+            class="project-section__heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Material Base
+          </h2>
+          <p
+            class="project-section__text"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            O layout e os assets visuais foram disponibilizados previamente, com
+            acesso ao Figma e imagens fornecidas.
+          </p>
+          <figure
+            class="design-preview"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="assets/images/devBurguer/wireframe.png"
+              alt="Wireframe do projeto DevBurguer"
+            />
+            <figcaption>
+              Wireframe utilizado como base para o desenvolvimento.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
       <section id="results" class="project-section project-section-results">
         <div class="project-section__container">
@@ -355,23 +390,98 @@
             na usabilidade e na experiência do usuário em diferentes
             dispositivos e modos de visualização.
           </p>
-          <div class="result__gallary">
+          <div class="result">
+            <div
+              class="result__gallary"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <img
+                src="assets/images/devBurguer/macbook.png"
+                class="image-default"
+                alt=""
+              />
+              <img
+                src="assets/images/devBurguer/Macbook-Air-localhost (1).png"
+                class="image-details"
+                alt=""
+              />
+            </div>
+            <div
+              class="result__desc"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h4 class="result__title">Desktop</h4>
+              <p class="result__text">
+                Na versão desktop, o sistema prioriza navegação rápida entre
+                categorias e facilidade para adicionar itens ao carrinho com um
+                clique. Um indicador de horário informa a disponibilidade do
+                serviço, e o contador de itens mantém o usuário atualizado sem
+                interromper a navegação. O carrinho permite gerenciar produtos,
+                ajustar quantidades e calcular automaticamente o total. O campo
+                de endereço é centralizado para facilitar o fechamento do
+                pedido, e a integração com o WhatsApp permite enviar o carrinho
+                diretamente ao estabelecimento.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="result__mobile">
+            <div
+              class="result__desc"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h4 class="result__title">Mobile - Home</h4>
+              <p class="result__text">
+                Na experiência mobile, priorizamos a velocidade de carregamento
+                e a facilidade de navegação com uma mão. O menu vertical permite
+                explorar todas as opções com movimentos naturais de rolagem,
+                enquanto os botões de adição ao carrinho estão posicionados
+                estrategicamente para acesso fácil com o polegar. A verificação
+                de horário de funcionamento impede tentativas de pedido fora do
+                expediente, poupando tempo do cliente e do estabelecimento.
+              </p>
+            </div>
             <img
               src="assets/images/devBurguer/mobile-02.png"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              data-aos-anchor-placement="center-bottom"
               alt=""
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
             />
+          </div>
+          <hr />
+          <div class="result__mobile result__mobile--cart">
             <img
               src="assets/images/devBurguer/mobile-01.png"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-              data-aos-anchor-placement="center-bottom"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1200"
               alt=""
             />
+            <div
+              class="result__desc"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <h4 class="result__title">Mobile - Modal do Carrinho</h4>
+              <p class="result__text">
+                O carrinho mobile mantém todas as funcionalidades da versão
+                desktop em um formato otimizado para telas menores. O sistema de
+                validação de endereço assegura que informações completas sejam
+                fornecidas antes de finalizar o pedido, reduzindo erros de
+                entrega. A integração com WhatsApp foi especialmente otimizada
+                para dispositivos móveis, permitindo uma transição perfeita
+                entre o cardápio e o aplicativo de mensagens sem perda de dados
+                do pedido.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -403,8 +513,8 @@
               href="https://jamillyferreira039@gmail.com"
               target="_blank"
             >
-              <i class="fa-solid fa-envelope"></i
-            ></a>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -412,9 +522,8 @@
         <p class="footer__text">
           Feito com dedicação, café e um pouco de código!
         </p>
-        <span class="data-update">Última atualização: 12/05/2025 - v1.0</span>
+        <span class="data-update"></span>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
