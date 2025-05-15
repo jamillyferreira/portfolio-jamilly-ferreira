@@ -8,6 +8,7 @@ Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar os projetos que desenvo
 
 Sou estudante de **Análise e Desenvolvimento de Sistemas** apaixonada por criar experiências web intuitivas e funcionais. Desenvolvo interfaces com foco em usabilidade e boas práticas de programação, buscando sempre aprender novas tecnologias e aprimorar minhas habilidades. Este portfólio reúne meus principais projetos front-end e demonstra minha jornada de evolução técnica.
 
+
 ## 🚀 Tecnologias utilizadas
 
 - HTML5 semântico
@@ -17,6 +18,7 @@ Sou estudante de **Análise e Desenvolvimento de Sistemas** apaixonada por criar
 - Biblioteca AOS para animações de scroll
 - Git/GitHub para versionamento
 - Vercel para deploy
+
 
 ## 🗂️ Estrutura do projeto
 
@@ -35,23 +37,33 @@ portfolio/
 
 ```
 
+
 ## 💼 Projetos incluídos
 
-✅ Todo List
+✅ **Todo List**:
+
 Aplicação de lista de tarefas com funcionalidades para adicionar, marcar e excluir tarefas. Desenvolvida com JavaScript puro, utilizando localStorage para persistência de dados.
+
 [Ver projeto](https://todo-list-tau-self.vercel.app/) | [Repositório](https://github.com/jamillyferreira/todo-list)
 
-🛒Carrinho Doce
+🛒 **Carrinho Doce**
+
 Sistema de e-commerce simplificado com catálogo de produtos e carrinho de compras dinâmico. Implementado com JavaScript moderno e manipulação avançada do DOM.
+
 [Ver projeto](https://product-list-with-cart-eosin.vercel.app/) | [Repositório](https://github.com/jamillyferreira/product-list-with-cart)
 
-🍔 Dev Burguer
+🍔 **Dev Burguer**
+
 Cardápio digital interativo para restaurante com interface amigável, carrinho de compras dinâmico e integração com WhatsApp para finalização de pedidos. Desenvolvido com foco em experiência do usuário.
+
 [Ver projeto](https://digital-menu-cart.vercel.app/) | [Repositório](https://github.com/jamillyferreira/digital-menu-cart)
 
-👩‍💻 Portfólio
+👩‍💻 **Portfólio**
+
 Este próprio portfólio que você está visualizando! Desenvolvido com HTML, CSS e JavaScript, com design responsivo e animações suaves para melhor experiência do usuário.
+
 [Ver projeto](https://jamillyferreira.vercel.app/) | [Repositório](https://github.com/jamillyferreira/portfolio-jamilly-ferreira)
+
 
 ## 🚀 Como visualizar o portfólio
 
@@ -68,6 +80,7 @@ git clone https://github.com/jamillyferreira/portfolio-jamilly-ferreira.git
 
 2. Abra o arquivo `index.html` no seu navegador
 
+
 ## 📊 Funcionalidades
 
 - **Design responsivo**: Adaptação perfeita para diferentes tamanhos de tela
@@ -76,6 +89,7 @@ git clone https://github.com/jamillyferreira/portfolio-jamilly-ferreira.git
 - **Modo escuro/claro**: Opção de alternar entre temas
 - **Exibição detalhada de projetos**: Cards interativos com links para demonstrações
 
+
 ## 📞 Contato
 
 Me chama pra conversar, trocar ideia ou recrutar 😁
@@ -83,6 +97,7 @@ Me chama pra conversar, trocar ideia ou recrutar 😁
 - LinkedIn: [linkedin.com/in/jamillyferreira](https://www.linkedin.com/in/jamillyferreira/)
 - GitHub: [github.com/jamillyferreira](https://github.com/jamillyferreira)
 - E-mail: jamillyferreira039@gmail.com
+
 
 ## 🔄 Status do projeto
 
