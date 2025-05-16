@@ -19,16 +19,16 @@
     <title>Todo list</title>
   </head>
   <body>
-    <header class="header">
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
       <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
         <h2 class="logo__text">JF</h2>
       </div>
-      <nav
-        class="nav-menu"
-        data-aos="fade-down"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
+      <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
             <a class="nav-menu__item-link" href="index.html">Projetos</a>
@@ -40,10 +40,6 @@
             <button class="dropdown-toggle">Contato</button>
             <ul class="dropdown-menu">
               <li>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
-              </li>
-              <li>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <a
                   href="https://www.linkedin.com/in/jamillyferreira/"
@@ -53,7 +49,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
+                <a href="mailto:jamillyferreira039@gmail.com">E-mail</a>
               </li>
               <li>
                 <i class="fa-solid fa-file"></i>
@@ -65,12 +61,7 @@
           </li>
         </ul>
       </nav>
-      <button
-        class="toggleDarkMode"
-        data-aos="fade-down"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
+      <button class="toggleDarkMode">
         <i class="fa-solid fa-sun icon-sun"></i>
       </button>
     </header>
@@ -106,43 +97,17 @@
       </section>
 
       <section id="overview" class="project-section project-section--overview">
-        <div
-          class="project-section__container"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-        >
-          <p
-            class="project-section__subheading"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            Sobre o projeto
-          </p>
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+        <div class="project-section__container">
+          <p class="project-section__subheading">Sobre o projeto</p>
+          <h2 class="project-section__heading">
             Uma solução para lista de compras
           </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
+          <p class="project-section__text">
             Um projeto simples e direto ao ponto, focado em renderizar uma lista
             de produtos e permitir que o usuário adicione e remova itens de um
             carrinho.
           </p>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
+          <p class="project-section__text">
             Esse desafio foi retirado da plataforma Frontend Mentor, utilizando
             os arquivos visuais fornecidos por eles como base. O layout foi
             interpretado "no olho", sem uso de Figma. O foco foi praticar HTML,
@@ -150,24 +115,14 @@
             dinamicamente a partir de um arquivo <code>data.json</code>.
           </p>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Ferramentas Usadas</h3>
               <p class="project-grid__content">
                 HTML, CSS, Javascript <br />
                 Baseado nos arquivos visuais fornecidos pelo Frontend Mentor.
               </p>
             </div>
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Cronograma</h3>
               <p class="project-grid__content">2 dias (março-2025)</p>
             </div>
@@ -177,27 +132,11 @@
 
       <section id="features" class="project-section project-section--features">
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Recursos & Experiência
-          </h2>
+          <h2 class="project-section__heading">Recursos & Experiência</h2>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-              data-aos-offset="300"
-            >
+            <div class="project-grid__column">
               <ul class="feature-list">
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title"
                     >Adicionar e remover itens:</span
                   >
@@ -206,12 +145,7 @@
                     com um clique, controlando seus pedidos facilmente.
                   </span>
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title"
                     >Controle de quantidade:</span
                   >
@@ -219,12 +153,7 @@
                     É possível aumentar ou diminuir a quantidade de cada item.
                   </span>
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title"
                     >Acessibilidade visual:</span
                   >
@@ -236,43 +165,23 @@
               </ul>
             </div>
 
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-duration="1200"
-              data-aos-offset="300"
-            >
+            <div class="project-grid__column">
               <ul class="feature-list">
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title">Modal de confirmação:</span>
                   <span class="feature-list__description">
                     Ao clicar em "Confirmar Pedido", o usuário vê um modal de
                     confirmação, trazendo feedback visual claro da ação.
                   </span>
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title">Reset do carrinho:</span>
                   <span class="feature-list__description">
                     Clicando em "Novo Pedido", todas as seleções são reiniciadas
                     para facilitar um novo processo de compra.
                   </span>
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title">Layout responsivo:</span>
                   <span class="feature-list__description">
                     A interface se adapta a diferentes tamanhos de tela,
@@ -291,66 +200,30 @@
         class="project-section project-section--challenges project-section--light"
       >
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Desafio e Aprendizado
-          </h2>
+          <h2 class="project-section__heading">Desafio e Aprendizado</h2>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="1200"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Desafios</h3>
               <ul class="challenge-list">
-                <li
-                  class="challenge-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="challenge-list__item">
                   Manter a organização do DOM com manipulação direta via
                   JavaScript sem frameworks.
                 </li>
-                <li
-                  class="challenge-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="challenge-list__item">
                   Gerenciar a lógica do carrinho com atualização em tempo real e
                   evitar bugs com quantidade negativa.
                 </li>
               </ul>
             </div>
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-duration="1200"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">O que aprendi</h3>
               <ul class="learning-list">
-                <li
-                  class="learning-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="learning-list__item">
                   Refinei a lógica condicional com JavaScript puro e pratiquei a
                   manipulação de classes e elementos com
                   <code>createElement</code> e <code>classList</code>.
                 </li>
-                <li
-                  class="learning-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="learning-list__item">
                   Aprendi a estruturar meu código de forma mais modular,
                   separando responsabilidades entre HTML, CSS e JS
                 </li>
@@ -365,19 +238,8 @@
         class="project-section project-section--creative-process"
       >
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Material Base
-          </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <h2 class="project-section__heading">Material Base</h2>
+          <p class="project-section__text">
             Os recursos visuais foram disponibilizados previamente pelo desafio
             do Frontend Mentor, incluindo imagens do layout. Não houve criação
             própria de wireframes ou identidade visual. Além disso, optei por
@@ -406,18 +268,8 @@
 
       <section id="results" class="project-section project-section-results">
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            O Projeto Final
-          </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <h2 class="project-section__heading">O Projeto Final</h2>
+          <p class="project-section__text">
             O resultado é uma aplicação leve, funcional e responsiva,
             desenvolvida com HTML, CSS e JavaScript puro. O projeto foi baseado
             em um desafio do site Frontend Mentor e simula uma loja online com
@@ -480,7 +332,8 @@
           <li class="footer__item">
             <a
               class="footer__item-link"
-              href="mailto:jamillyferreira039@gmail.com">
+              href="mailto:jamillyferreira039@gmail.com"
+            >
               <i class="fa-solid fa-envelope"></i
             ></a>
           </li>

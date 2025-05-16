@@ -6,6 +6,7 @@
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
   crossorigin="anonymous"referrerpolicy="no-referrer"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/about.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
@@ -13,7 +14,7 @@
   <title>Sobre mim</title>
   </head>
   <body>
-  <header class="header">
+  <header class="header" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
   <div class="header__logo">
     <h2 class="logo__text">JF</h2>
   </div>
@@ -29,16 +30,12 @@
         <button class="dropdown-toggle">Contato</button>
         <ul class="dropdown-menu">
           <li>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
-          </li>
-          <li>
             <i class="fa-brands fa-linkedin-in"></i>
             <a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank">LinkedIn</a>
           </li>
           <li>
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
+            <a href="mailto:jamillyferreira039@gmail.com">E-mail</a>
           </li>
           <li>
             <i class="fa-solid fa-file"></i>
@@ -52,16 +49,16 @@
 </header>
 <main class="main-profile">
   <section class="profile">
-    <div class="profile__image">
+    <div class="profile__image" data-aos="fade-up" data-aos-duration="1000">
       <img src="assets/images/avatar.png" alt="Avatar" />
     </div>
-    <div class="profile__info">
+    <div class="profile__info" data-aos="fade-up" data-aos-duration="1500">
       <h3 class="profile__greeting">Olá, Prazer em te conhecer! 👋</h3>
       <p class="profile__description">
         Meu nome é Jamilly, sou uma desenvolvedora front-end em formação e atualmente estou no 3º período de Análise e Desenvolvimento de Sistemas. Desde o meu primeiro "Hello, World!", descobri que programar é uma forma poderosa de transformar ideias em realidade, e é isso que me motiva a seguir em frente.
       </p>
       <p class="profile__description">
-        No momento, estou focada em desenvolvimento front-end, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar interfaces funcionais e intuitivas. Também trabalho com ferramentas como <strong>Git</strong> e <strong>GitHub</strong> para versionamento de código, o que me ajuda a manter meus projetos organizados e colaborativos. Recentemente, comecei a explorar <strong>React</strong>, <strong>Next.js</strong> e <strong>Tailwind CSS</strong>, e estou animada com as possibilidades que essas ferramentas oferecem para criar interfaces modernas, eficientes e visualmente atraentes.
+        No momento, estou focada em desenvolvimento front-end, utilizando tecnologias como <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> para criar interfaces funcionais e intuitivas. Também trabalho com ferramentas como <span>Git</span> e <span>GitHub</span> para versionamento de código, o que me ajuda a manter meus projetos organizados e colaborativos. Recentemente, comecei a explorar <span>React</span>, <span>Next.js</span> e <span>Tailwind CSS</span>, e estou animada com as possibilidades que essas ferramentas oferecem para criar interfaces modernas, eficientes e visualmente atraentes.
       </p>
       <p class="profile__description">
         Meu objetivo é desenvolver soluções que não apenas atendam às necessidades técnicas, mas que também ofereçam uma experiência excepcional ao usuário. Acredito que a tecnologia, quando bem aplicada, pode ser uma ferramenta poderosa para conectar pessoas e resolver problemas reais.
@@ -72,11 +69,21 @@
       <p class="profile__description">Obrigada por reservar um tempo para ver meu portfólio!</p>
   </section>
 
-  <section class="quick-links">
-    <ul class="quick-links__list">
-      <li class="quick-links__item"><a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank" class="quick-links__link">LinkedIn</a></li>
-      <li class="quick-links__item"><a href="" class="quick-links__link">E-mail</a></li>
-    </ul>
+  <section class="contact">
+    <div class="contact__links">
+      <a href="assets/jamilly-ferreira-cv.pdf" target="_blank" class="contact__link">
+        <i class="fa-solid fa-file-lines"></i>
+        Currículo
+      </a>
+        <a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank" class="contact__link">
+          <i class="fa-brands fa-linkedin-in"></i>
+          LinkedIn
+        </a>
+        <a href="mailto:jamillyferreira039@gmail.com" class="contact__link">
+          <i class="fa-solid fa-envelope"></i>
+          E-mail
+        </a>
+    </div>
   </section>
 </main>
 </body>

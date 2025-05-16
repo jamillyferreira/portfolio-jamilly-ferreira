@@ -23,7 +23,12 @@
     <title>Jamilly Ferreira</title>
   </head>
   <body class="loading">
-    <header class="header">
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
       <div class="header__logo">
         <h2 class="logo__text">JF</h2>
       </div>
@@ -43,10 +48,6 @@
             <button class="dropdown-toggle">Contato</button>
             <ul class="dropdown-menu">
               <li>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
-              </li>
-              <li>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <a
                   href="https://www.linkedin.com/in/jamillyferreira/"
@@ -56,9 +57,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com"
-                  >Gmail</a
-                >
+                <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
               </li>
               <li>
                 <i class="fa-solid fa-file"></i>
@@ -76,7 +75,7 @@
     </header>
     <main class="main-content" id="topo">
       <section class="home" id="home">
-        <div class="home__content" data-aos="fade-up" data-aos-duration="2500">
+        <div class="home__content">
           <h1 class="home__title">Jamilly Ferreira</h1>
           <h3 class="home__subtitle">Desenvolvedora <span>Front-End</span></h3>
           <p class="home__descripiton">
@@ -117,28 +116,22 @@
         </div>
         <img
           class="home-image-hero"
-          data-aos="fade-up"
-          data-aos-duration="2000"
           src="assets/images/hand-coding-animate.svg"
           alt="Imagem hand condig"
+          data-aos="fade-up"
+          data-aos-duration="2000"
         />
       </section>
 
-      <section
-        class="projects"
-        id="projects"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+      <section class="projects" id="projects">
         <h2 class="project__title">Projetos</h2>
         <p class="projects__selection">Selecione um projeto</p>
         <div class="projects__group">
           <article
             class="project-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-offset="300"
           >
             <div class="project-card__content">
               <a href="todoList.html">
@@ -187,10 +180,9 @@
 
           <article
             class="project-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-offset="300"
           >
             <div class="project-card__content">
               <a href="#">
@@ -209,10 +201,12 @@
                   <span class="tag tag-css">CSS</span>
                   <span class="tag tag-javascript">JS</span>
                 </div>
-                <p class="project-card__text">
-                </p>
+                <p class="project-card__text"></p>
                 <div class="project-card__actions">
-                  <a href="https://jamillyferreira.vercel.app/" class="btn btn-preview">
+                  <a
+                    href="https://jamillyferreira.vercel.app/"
+                    class="btn btn-preview"
+                  >
                     <i class="fa-solid fa-eye"></i>
                     Previa
                   </a>
@@ -230,10 +224,9 @@
 
           <article
             class="project-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-offset="400"
           >
             <div class="project-card__content">
               <a href="sweetCart.html">
@@ -278,10 +271,9 @@
 
           <article
             class="project-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-offset="500"
           >
             <div class="project-card__content">
               <a href="digitalMenuCart.html">
@@ -338,7 +330,6 @@
         </a>
       </div>
     </main>
-
     <footer id="footer" class="footer">
       <nav class="footer__nav">
         <ul class="footer__list">
@@ -363,7 +354,8 @@
           <li class="footer__item">
             <a
               class="footer__item-link"
-              href="mailto:jamillyferreira039@gmail.com">
+              href="mailto:jamillyferreira039@gmail.com"
+            >
               <i class="fa-solid fa-envelope"></i
             ></a>
           </li>

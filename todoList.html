@@ -19,16 +19,16 @@
     <title>Todo list</title>
   </head>
   <body>
-    <header class="header">
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
       <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
         <h2 class="logo__text">JF</h2>
       </div>
-      <nav
-        class="nav-menu"
-        data-aos="fade-down"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
+      <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
             <a class="nav-menu__item-link" href="index.html">Projetos</a>
@@ -40,10 +40,6 @@
             <button class="dropdown-toggle">Contato</button>
             <ul class="dropdown-menu">
               <li>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/994492496" target="_blank">WhatsApp</a>
-              </li>
-              <li>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <a
                   href="https://www.linkedin.com/in/jamillyferreira/"
@@ -53,7 +49,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:jamillyferreira039@gmail.com">Gmail</a>
+                <a href="mailto:jamillyferreira039@gmail.com">E-mail</a>
               </li>
               <li>
                 <i class="fa-solid fa-file"></i>
@@ -65,12 +61,7 @@
           </li>
         </ul>
       </nav>
-      <button
-        class="toggleDarkMode"
-        data-aos="fade-down"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
+      <button class="toggleDarkMode">
         <i class="fa-solid fa-sun icon-sun"></i>
       </button>
     </header>
@@ -107,43 +98,17 @@
       </section>
 
       <section id="overview" class="project-section project-section--overview">
-        <div
-          class="project-section__container"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-        >
-          <p
-            class="project-section__subheading"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            Sobre o projeto
-          </p>
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+        <div class="project-section__container">
+          <p class="project-section__subheading">Sobre o projeto</p>
+          <h2 class="project-section__heading">
             Uma solução para gestão de tarefas
           </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
+          <p class="project-section__text">
             Uma aplicação de lista de tarefas (To-Do List) com funcionalidades
             básicas e avançadas, como adicionar, marcar, remover e filtrar
             tarefas.
           </p>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
+          <p class="project-section__text">
             Este projeto foi um desafio pessoal que desenvolvi para praticar e
             consolidar meus conhecimentos em <span>HTML</span>,
             <span>CSS</span> e <span>JavaScript</span> . <br />
@@ -153,24 +118,14 @@
             no desktop quanto no mobile.
           </p>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Ferramentas Usadas</h3>
               <p class="project-grid__content">
                 Figma (para o design) <br />
                 HTML, CSS, Javascript
               </p>
             </div>
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Cronograma</h3>
               <p class="project-grid__content">1 semana (Fevereiro-2025)</p>
             </div>
@@ -180,41 +135,20 @@
 
       <section id="features" class="project-section project-section--features">
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Recursos & Experiência
-          </h2>
+          <h2 class="project-section__heading">Recursos & Experiência</h2>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-              data-aos-offset="300"
-            >
+            <div class="project-grid__column">
               <ul class="feature-list">
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
-                  <span class="feature-list__title"
-                    >Adicionar, marcar e remover tarefas:</span
+                <li class="feature-list__item">
+                  <span class="feature-list__title">
+                    Adicionar, marcar e remover tarefas:</span
                   >
-                  <span class="feature-list__description"
-                    >Interface intuitiva para gerenciar tarefas de forma fácil e
-                    rápida.</span
-                  >
+                  <span class="feature-list__description">
+                    Interface intuitiva para gerenciar tarefas de forma fácil e
+                    rápida.
+                  </span>
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title">Filtro de tarefas:</span>
                   <span class="feature-list__description"
                     >Opções para visualizar todas as tarefas, apenas as
@@ -223,31 +157,16 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-duration="1200"
-              data-aos-offset="300"
-            >
+            <div class="project-grid__column">
               <ul class="feature-list">
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title">Dark mode automático:</span>
                   <span class="feature-list__description"
                     >A aplicação se adapta ao tema do sistema do usuário (light
                     ou dark).</span
                   >
                 </li>
-                <li
-                  class="feature-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="feature-list__item">
                   <span class="feature-list__title"
                     >Persistência de dados:</span
                   >
@@ -267,66 +186,30 @@
         class="project-section project-section--challenges project-section--light"
       >
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Desafio e Aprendizado
-          </h2>
+          <h2 class="project-section__heading">Desafio e Aprendizado</h2>
           <div class="project-grid">
-            <div
-              class="project-grid__column"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="1200"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">Desafios</h3>
               <ul class="challenge-list">
-                <li
-                  class="challenge-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="challenge-list__item">
                   Implementar o dark mode automático exigiu uma pesquisa sobre
                   como detectar as preferências do sistema do usuário.
                 </li>
-                <li
-                  class="challenge-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="challenge-list__item">
                   Garantir que as tarefas fossem salvas corretamente no
                   localStorage e atualizadas em tempo real foi um desafio
                   técnico interessante.
                 </li>
               </ul>
             </div>
-            <div
-              class="project-grid__column"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-duration="1200"
-            >
+            <div class="project-grid__column">
               <h3 class="project-grid__heading">O que aprendi</h3>
               <ul class="learning-list">
-                <li
-                  class="learning-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="200"
-                >
+                <li class="learning-list__item">
                   Aprendi a manipular o localStorage de forma eficiente e a
                   criar interfaces que se adaptam ao tema do sistema.
                 </li>
-                <li
-                  class="learning-list__item"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="400"
-                >
+                <li class="learning-list__item">
                   Melhorei minhas habilidades em JavaScript puro para criar
                   funcionalidades dinâmicas sem depender de bibliotecas.
                 </li>
@@ -341,19 +224,8 @@
         class="project-section project-section--creative-process"
       >
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Processo criativo
-          </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <h2 class="project-section__heading">Processo criativo</h2>
+          <p class="project-section__text">
             No wireframe inicial, o projeto tinha um design mais simples, com o
             dark mode sendo ativado apenas automaticamente, com base nas
             preferências do sistema do usuário. Durante o desenvolvimento,
@@ -361,20 +233,10 @@
             usuário.
           </p>
 
-          <h2
-            class="design-overview__heading"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-          >
+          <h2 class="design-overview__heading">
             Estrutura e Identidade Visual
           </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <p class="project-section__text">
             Visão geral da estrutura e identidade visual do projeto, incluindo
             wireframe, tipografia e paleta de cores. O design do aplicativo foi
             cuidadosamente planejado para garantir uma experiência intuitiva e
@@ -421,25 +283,14 @@
           </div>
           <hr />
           <div class="design-block">
-            <h3
-              class="design-block__title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              Wireframes
-            </h3>
-            <p
-              class="design-block__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <h3 class="design-block__title">Wireframes</h3>
+            <p class="design-block__description">
               Estrutura básica da aplicação em diferentes dispositivos.
             </p>
             <figure
               class="design-preview"
               data-aos="zoom-in"
-              data-aos-offset="200"
+              data-aos-offset="100"
               data-aos-duration="1000"
               data-aos-anchor-placement="center-bottom"
             >
@@ -453,35 +304,13 @@
           <hr />
           <!-- Sistema de Design -->
           <div class="design-system">
-            <h3
-              class="design-system__title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              Sistema de Design
-            </h3>
-            <p
-              class="design-system__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <h3 class="design-system__title">Sistema de Design</h3>
+            <p class="design-system__description">
               Elementos fundamentais que compõem a identidade visual do projeto.
             </p>
             <div class="design-system__grid">
-              <div
-                class="design-system__typography"
-                data-aos="fade-right"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-              >
-                <h4
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="300"
-                >
-                  Tipografia
-                </h4>
+              <div class="design-system__typography">
+                <h4>Tipografia</h4>
                 <p
                   data-aos="fade-up"
                   data-aos-duration="800"
@@ -490,19 +319,8 @@
                   Poppis
                 </p>
               </div>
-              <div
-                class="design-system__colors"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-              >
-                <h4
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-delay="300"
-                >
-                  Paleta de Cores
-                </h4>
+              <div class="design-system__colors">
+                <h4>Paleta de Cores</h4>
 
                 <div class="color-palette">
                   <div
@@ -573,18 +391,8 @@
 
       <section id="results" class="project-section project-section-results">
         <div class="project-section__container">
-          <h2
-            class="project-section__heading"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            O Projeto Final
-          </h2>
-          <p
-            class="project-section__text"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <h2 class="project-section__heading">O Projeto Final</h2>
+          <p class="project-section__text">
             O resultado é uma aplicação limpa, intuitiva e funcional, com foco
             na usabilidade e na experiência do usuário em diferentes
             dispositivos e modos de visualização.
