@@ -58,11 +58,11 @@ Cardápio digital interativo para restaurante com interface amigável, carrinho 
 
 [Ver projeto](https://digital-menu-cart.vercel.app/) | [Repositório](https://github.com/jamillyferreira/digital-menu-cart)
 
-👩‍💻 **Portfólio**
+👩‍💻 **Devfinder**
 
-Este próprio portfólio que você está visualizando! Desenvolvido com HTML, CSS e JavaScript, com design responsivo e animações suaves para melhor experiência do usuário.
+Desenvolvido como desafio do site [Frontend Mentor](https://www.frontendmentor.io/), este projeto consome a API pública do GitHub para exibir perfis de desenvolvedores com foco em **busca dinâmica**.
 
-[Ver projeto](https://jamillyferreira.vercel.app/) | [Repositório](https://github.com/jamillyferreira/portfolio-jamilly-ferreira)
+[Ver projeto](https://devfinder-cyan.vercel.app/) | [Repositório](https://github.com/jamillyferreira/devfinder)
 
 
 ## 🚀 Como visualizar o portfólio
