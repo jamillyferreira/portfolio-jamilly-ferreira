@@ -35,7 +35,7 @@
   margin-bottom: 10px;
   text-align: justify;
   line-height: 1.7;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .project-section__container {
   width: 80%;
@@ -178,47 +178,6 @@
   font-size: 16px;
 }
 
-/* .design-block__gallary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-} */
-
-/* .design-block__gallary img {
-  border-radius: 10px;
-  box-shadow: var(--card-shadow);
-} */
-
-/* .design__gallary--wireframes img {
-  height: 400px;
-} */
-
-/* .wireframe-desktop {
-  width: 100%;
-  max-width: 600px;
-} */
-
-/* .wireframe-mobile {
-  width: 100%;
-  max-width: 200px;
-} */
-
-/* .design-block__gallary--desktop img {
-  width: 100%;
-  max-width: 580px;
-} */
-
-/* .design-block__gallary--mobile img {
-  width: 100%;
-  max-width: 230px;
-} */
-/* .design-block__gallary .design-preview-desktop {
-  max-width: 700px;
-} */
-
 .design-system__title {
   font-size: 24px;
   color: var(--text-title);
@@ -260,49 +219,35 @@
   font-family: monospace;
 }
 .color-palette__item:nth-child(1) .color-swatch {
-  background-color: #393838;
+  background-color: #141c2f;
 }
 
 .color-palette__item:nth-child(2) .color-swatch {
-  background-color: #3da3c2;
+  background-color: #1f2a48;
 }
 
 .color-palette__item:nth-child(3) .color-swatch {
-  background-color: #f4f4f4;
+  background-color: #0079fe;
 }
 
 .color-palette__item:nth-child(4) .color-swatch {
-  background-color: #343750;
+  background-color: #ffffff;
 }
 
 .color-palette__item:nth-child(5) .color-swatch {
-  background-color: #232537;
+  background-color: #363636;
 }
 
 .color-palette__item:nth-child(6) .color-swatch {
-  background-color: #f8f8f8;
+  background-color: #495e77;
+}
+.color-palette__item:nth-child(7) .color-swatch {
+  background-color: #f4f4f4;
 }
 
 .project-section-results {
   background-color: var(--bg-surface);
 }
-
-/* .result__gallary {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-} */
-/* .result__gallary img {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  transition: transform 0.3s ease;
-} */
-/* .result__gallary img:hover {
-  transform: scale(1.03);
-} */
 
 hr {
   border: none;
@@ -393,4 +338,5 @@ hr {
   .project-grid {
     gap: 4rem;
   }
+ 
 }

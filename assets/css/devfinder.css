@@ -1,0 +1,123 @@
+.design-preview {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.design-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: var(--card-shadow);
+}
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+.result .device-desktop {
+  width: 100%;
+  max-width: 530px;
+  transition: opacity 0.5s ease;
+}
+.result .device-mobile {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.device-mobile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.project-cta__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.project-cta__links .btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.project-cta__links .btn-preview {
+  color: var(--text-light);
+  background-color: var(--color-primary);
+}
+.project-cta__links .btn-github {
+  color: var(--text-light);
+  background-color: #232226;
+  border: 1px solid var(--border-color);
+}
+.project-cta__links .btn-preview:hover {
+  background-color: #555cf1de;
+}
+.project-cta__links .btn-github:hover {
+  background-color: #3d3d3d;
+  border: 1px solid var(--border-color);
+}
+
+@media screen and (max-width: 768px) {
+  .design-preview {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .result {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .device-mobile-wrapper .device-mobile {
+    max-width: 180px;
+    width: 100%;
+  }
+  .result__mobile--cart {
+    flex-direction: column;
+  }
+  .project-cta__text {
+    font-size: 14px;
+  }
+  .project-cta__links .btn {
+    font-size: 14px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+  hr {
+    margin: 0rem 0 3rem 0rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .result {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .result__mobile {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .result__mobile img {
+    width: 250px;
+  }
+  .device-desktop {
+    max-width: 400px;
+    width: 100%;
+  }
+  .device-mobile-wrapper .device-mobile {
+    width: 190px;
+  }
+}

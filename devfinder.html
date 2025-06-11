@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/project-details.css" />
+    <link rel="stylesheet" href="assets/css/devfinder.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Devfinder</title>
+  </head>
+  <body>
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
+      <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
+        <h2 class="logo__text">JF</h2>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="index.html">Projetos</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="nav-menu__item dropdown">
+            <button class="dropdown-toggle">Contato</button>
+            <ul class="dropdown-menu">
+              <li>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <a
+                  href="https://www.linkedin.com/in/jamillyferreira/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:jamillyferreira039@gmail.com">E-mail</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-file"></i>
+                <a href="assets/jamilly-ferreira-cv.pdf" target="_blank"
+                  >Currículo</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="toggleDarkMode">
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </header>
+    <main class="main-project">
+      <section class="project-section project-section--hero">
+        <div class="project-hero">
+          <h1
+            class="project-hero__title"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            Devfinder
+          </h1>
+          <div
+            class="project-hero__image-wrapper"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <img
+              class="project-hero__image-desktop"
+              src="assets/images/devfinder/mackbook-dark.png"
+              alt="imagem desktop"
+            />
+            <img
+              class="project-hero__image-mobile"
+              src="assets/images/devfinder/mobile.png"
+              alt="imagem mobile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="project-section project-section--overview">
+        <div class="project-section__container">
+          <p class="project-section__subheading">Sobre o projeto</p>
+          <h2 class="project-section__heading">Descrição do Projeto</h2>
+          <p class="project-section__text">
+            Este projeto foi um desafio do Frontend Mentor com o objetivo de
+            consumir a API pública do GitHub para buscar e exibir os dados de
+            perfis de usuários. Foi um ótimo desafio para treinar o uso de APIs
+            de terceiros, trabalhar com dados dinâmicos e aplicar conceitos de
+            <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Como
+            o design original era premium, adaptei a interface com base na
+            pré-visualização disponível, priorizando a experiência do usúario e
+            a responsividade em diferentes dispositivos. O foco da aplicação
+            consiste na funcionalidade de busca e na exibição organizada das
+            informações do perfil, com tratamento de erros e estados de
+            carregamento.
+          </p>
+
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Ferramentas Usadas</h3>
+              <p class="project-grid__content">HTML, CSS, Javascript,</p>
+            </div>
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Cronograma</h3>
+              <p class="project-grid__content">Fevereiro-2025</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="project-section project-section--features">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Recursos & Experiência</h2>
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <ul class="feature-list">
+                <li class="feature-list__item">
+                  <span class="feature-list__title"> Busca dinâmica:</span>
+                  <span class="feature-list__description">
+                    Consulta e exibe informações de usuários (repositórios,
+                    seguidores, etc.).
+                  </span>
+                </li>
+                <li class="feature-list__item">
+                  <span class="feature-list__title">Responsividade:</span>
+                  <span class="feature-list__description"
+                    >Layout adaptável para mobile, tablet e desktop.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="project-grid__column">
+              <ul class="feature-list">
+                <li class="feature-list__item">
+                  <span class="feature-list__title">Dark/Light mode:</span>
+                  <span class="feature-list__description"
+                    >Alternância manual entre temas salvos no
+                    localStorage.</span
+                  >
+                </li>
+                <li class="feature-list__item">
+                  <span class="feature-list__title">Tratamento de Erros:</span>
+                  <span class="feature-list__description"
+                    >Mensagens claras para perfis não encontrados.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="challenges"
+        class="project-section project-section--challenges project-section--light"
+      >
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Desafio e Aprendizado</h2>
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Desafios</h3>
+              <ul class="challenge-list">
+                <li class="challenge-list__item">
+                  Implementar a busca dinâmica de usuários com fetch() foi o
+                  foco principal do projeto, exigindo atenção ao tratamento de
+                  erros, estados de carregamento e validação de entradas.
+                </li>
+                <li class="challenge-list__item">
+                  Lidar com usuários não encontrados e exibir mensagens
+                  amigáveis foi um desafio importante para a experiência do
+                  usuário (UX).
+                </li>
+                <li class="challenge-list__item">
+                  Adicionar o modo dark/light com base nas preferências do
+                  sistema e salvar a escolha no localStorage foi uma boa
+                  oportunidade de explorar manipulação de temas com JavaScript
+                  puro.
+                </li>
+              </ul>
+            </div>
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">O que aprendi</h3>
+              <ul class="learning-list">
+                <li class="learning-list__item">
+                  Uso da função fetch() com async/await para consumir a API
+                  pública do GitHub.
+                </li>
+                <li class="learning-list__item">
+                  Tratamento de erros com try/catch e feedback visual em caso de
+                  falhas.
+                </li>
+                <li class="learning-list__item">
+                  Manipulação dinâmica da DOM para preencher as informações do
+                  perfil buscado e implementação de dark mode responsivo com
+                  toggle manual, detectando o tema salvo no localStorage
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-section">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Material Base</h2>
+          <p class="project-section__text">
+            O desenvolvimento foi baseado nas imagem de pré-visualização
+            disponibilizada.
+          </p>
+          <figure
+            class="design-preview"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="assets/images/devfinder/print.png"
+              alt="Wireframe do projeto DevBurguer"
+            />
+            <figcaption>
+              Pré-visualização usada como base para o desenvolvimento.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results" class="project-section project-section-results">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">O Projeto Final</h2>
+          <p class="project-section__text">
+            O resultado final é uma aplicação limpa, funcional e visualmente
+            atraente, que cumpre exatamente seu propósito: buscar e exibir
+            perfis do GitHub de forma rápida, intuitiva e acessível. Com um
+            layout totalmente adaptativo, garanti uma experiência consistente em
+            dispositivos móveis e desktop, enquanto recursos como alternância de
+            temas e tratamento de erros demonstram a atenção aos detalhes na
+            experiência do usuário.
+          </p>
+          <p class="project-section__text">
+            Além disso, esse projeto foi um marco importante no meu aprendizado.
+            Aprimorei minhas habilidades em consumo de APIs REST, manipulação
+            eficiente do DOM com JavaScript vanilla e aplicação de boas práticas
+            de UI/UX. Foi um exercício valioso para refinar meu olhar crítico
+            para detalhes visuais e interações, algo essencial para minha
+            jornada como desenvolvedora front-end.
+          </p>
+          <p class="project-section__text">
+            Estou muito satisfeita com o equilíbrio entre design e
+            funcionalidade alcançado. O desafio proposto pelo Frontend Mentor me
+            permitiu transformar um brief em uma solução real, e agora o projeto
+            integra meu portfólio como um exemplo tangível da minha evolução
+            técnica e minha capacidade de entregar soluções focadas no usuário.
+          </p>
+
+          <div class="result">
+            <img
+              src="assets/images/devfinder/mackbook-dark.png"
+              alt="imagem mockup notebook"
+              class="device-desktop"
+            />
+            <div class="device-mobile-wrapper">
+              <img
+                src="assets/images/devfinder/mobile-light-02-portrait.png"
+                alt="imagem de mockup"
+                class="device-mobile"
+              />
+              <img
+                src="assets/images/devfinder/mobile-error-light.png"
+                alt="imagem de mockup"
+                class="device-mobile"
+              />
+            </div>
+          </div>
+          <div class="project-cta" data-aos="fade-up" data-aos-delay="300">
+            <p class="project-cta__text">
+              Quer explorar o projeto ou ver o código-fonte?
+            </p>
+            <div class="project-cta__links">
+              <a
+                href="https://devfinder-cyan.vercel.app/"
+                target="_blank"
+                class="btn btn-preview"
+              >
+                <i class="fa-solid fa-rocket"></i> Acessar deploy
+              </a>
+              <a
+                href="https://github.com/jamillyferreira/devfinder"
+                target="_blank"
+                class="btn btn-github"
+              >
+                <i class="fa-brands fa-github"></i> Ver repositório
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://www.linkedin.com/in/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://github.com/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="mailto:jamillyferreira039@gmail.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__content">
+        <p class="footer__text">
+          Feito com dedicação, café e um pouco de código!
+        </p>
+        <span class="data-update"></span>
+      </div>
+    </footer>
+  </body>
+</html>
