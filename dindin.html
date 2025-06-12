@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/project-details.css" />
+    <link rel="stylesheet" href="assets/css/digitalMenu.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Dev Burguer</title>
+  </head>
+  <body>
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
+      <div class="header__logo" data-aos="fade-down" data-aos-duration="800">
+        <h2 class="logo__text">JF</h2>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="index.html">Projetos</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__item-link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="nav-menu__item dropdown">
+            <button class="dropdown-toggle">Contato</button>
+            <ul class="dropdown-menu">
+              <li>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <a
+                  href="https://www.linkedin.com/in/jamillyferreira/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:jamillyferreira039@gmail.com">E-mail</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-file"></i>
+                <a href="assets/jamilly-ferreira-cv.pdf" target="_blank"
+                  >Currículo</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="toggleDarkMode">
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </header>
+    <main class="main-project">
+      <section class="project-section project-section--hero">
+        <div class="project-hero">
+          <h1
+            class="project-hero__title"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            Cardapio online <br />
+            Dev Burguer
+          </h1>
+          <div
+            class="project-hero__image-wrapper"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <img
+              class="project-hero__image-desktop"
+              src="assets/images/devBurguer/macbook.png"
+              alt="imagem desktop"
+            />
+            <img
+              class="project-hero__image-mobile"
+              src="assets/images/devBurguer/mobile-02.png"
+              alt="imagem mobile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="project-section project-section--overview">
+        <div class="project-section__container">
+          <p class="project-section__subheading">Sobre o projeto</p>
+          <h2 class="project-section__heading">
+            Cardápio digital para lanchonete
+          </h2>
+          <p class="project-section__text">
+            Um cardápio online interativo para a lanchonete fictícia DEV
+            Burguer, onde os clientes podem visualizar o menu, adicionar itens
+            ao carrinho e finalizar pedidos diretamente pelo WhatsApp.
+          </p>
+          <p class="project-section__text">
+            Este projeto foi desenvolvido acompanhando um tutorial no YouTube,
+            com o objetivo de criar uma solução prática para pequenos negócios
+            do ramo alimentício. <br />
+            Implementei funcionalidades como carrinho de compras dinâmico,
+            validação de horário de funcionamento e integração com WhatsApp para
+            envio de pedidos.
+          </p>
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Ferramentas Usadas</h3>
+              <p class="project-grid__content">
+                Figma (para o design) <br />
+                HTML, CSS, Javascript, Tailwind Css
+              </p>
+            </div>
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Cronograma</h3>
+              <p class="project-grid__content">2 dias (Fevereiro-2025)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="project-section project-section--features">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Recursos & Experiência</h2>
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <ul class="feature-list">
+                <li class="feature-list__item">
+                  <span class="feature-list__title">Carrinho de compras: </span>
+                  <span class="feature-list__description"
+                    >Adição, remoção e atualização dinâmica dos itens
+                    selecionados..</span
+                  >
+                </li>
+                <li class="feature-list__item">
+                  <span class="feature-list__title"
+                    >Cardápio digital completo:</span
+                  >
+                  <span class="feature-list__description"
+                    >Exibição de produtos com imagens, descrições e
+                    preços.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="project-grid__column">
+              <ul class="feature-list">
+                <li class="feature-list__item">
+                  <span class="feature-list__title"
+                    >Verificação de horário:</span
+                  >
+                  <span class="feature-list__description"
+                    >Sistema que checa se a lanchonete está aberta ou fechada
+                    com base no horário atual.</span
+                  >
+                </li>
+                <li class="feature-list__item">
+                  <span class="feature-list__title"
+                    >Integração com WhatsApp:</span
+                  >
+                  <span class="feature-list__description"
+                    >Envio automático do pedido completo diretamente para o
+                    WhatsApp do estabelecimento.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="challenges"
+        class="project-section project-section--challenges project-section--light"
+      >
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Desafio e Aprendizado</h2>
+          <div class="project-grid">
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">Desafios</h3>
+              <ul class="challenge-list">
+                <li class="challenge-list__item">
+                  Implementar a lógica de atualização dinâmica do carrinho
+                  mantendo a consistência dos dados.
+                </li>
+                <li class="challenge-list__item">
+                  Criar um sistema de validação de endereço que garanta
+                  informações completas antes do envio do pedido.
+                </li>
+              </ul>
+            </div>
+            <div class="project-grid__column">
+              <h3 class="project-grid__heading">O que aprendi</h3>
+              <ul class="learning-list">
+                <li class="learning-list__item">
+                  Aprimorei minhas habilidades em TailwindCSS para criar
+                  interfaces adaptáveis a diferentes dispositivos.
+                </li>
+                <li class="learning-list__item">
+                  Aprendi a integrar sistemas web com aplicações de mensagens
+                  para criar fluxos de pedido completos.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-section">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">Material Base</h2>
+          <p class="project-section__text">
+            O layout e os assets visuais foram disponibilizados previamente, com
+            acesso ao Figma e imagens fornecidas.
+          </p>
+          <figure
+            class="design-preview"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="assets/images/devBurguer/wireframe.png"
+              alt="Wireframe do projeto DevBurguer"
+            />
+            <figcaption>
+              Wireframe utilizado como base para o desenvolvimento.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results" class="project-section project-section-results">
+        <div class="project-section__container">
+          <h2 class="project-section__heading">O Projeto Final</h2>
+          <p class="project-section__text">
+            O resultado é uma aplicação limpa, intuitiva e funcional, com foco
+            na usabilidade e na experiência do usuário em diferentes
+            dispositivos e modos de visualização.
+          </p>
+          <div class="result">
+            <div
+              class="result__gallary"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            >
+              <img
+                src="assets/images/devBurguer/macbook.png"
+                class="image-default"
+                alt=""
+              />
+              <img
+                src="assets/images/devBurguer/Macbook-Air-localhost (1).png"
+                class="image-details"
+                alt=""
+              />
+            </div>
+            <div class="result__desc">
+              <h4 class="result__title">Desktop</h4>
+              <p class="result__text">
+                Na versão desktop, o sistema prioriza navegação rápida entre
+                categorias e facilidade para adicionar itens ao carrinho com um
+                clique. Um indicador de horário informa a disponibilidade do
+                serviço, e o contador de itens mantém o usuário atualizado sem
+                interromper a navegação. O carrinho permite gerenciar produtos,
+                ajustar quantidades e calcular automaticamente o total. O campo
+                de endereço é centralizado para facilitar o fechamento do
+                pedido, e a integração com o WhatsApp permite enviar o carrinho
+                diretamente ao estabelecimento.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="result__mobile">
+            <div class="result__desc">
+              <h4 class="result__title">Mobile - Home</h4>
+              <p class="result__text">
+                Na experiência mobile, priorizamos a velocidade de carregamento
+                e a facilidade de navegação com uma mão. O menu vertical permite
+                explorar todas as opções com movimentos naturais de rolagem,
+                enquanto os botões de adição ao carrinho estão posicionados
+                estrategicamente para acesso fácil com o polegar. A verificação
+                de horário de funcionamento impede tentativas de pedido fora do
+                expediente, poupando tempo do cliente e do estabelecimento.
+              </p>
+            </div>
+            <img
+              src="assets/images/devBurguer/mobile-02.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+            />
+          </div>
+          <hr />
+          <div class="result__mobile result__mobile--cart">
+            <img
+              src="assets/images/devBurguer/mobile-01.png"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1200"
+              alt=""
+            />
+            <div class="result__desc">
+              <h4 class="result__title">Mobile - Modal do Carrinho</h4>
+              <p class="result__text">
+                O carrinho mobile mantém todas as funcionalidades da versão
+                desktop em um formato otimizado para telas menores. O sistema de
+                validação de endereço assegura que informações completas sejam
+                fornecidas antes de finalizar o pedido, reduzindo erros de
+                entrega. A integração com WhatsApp foi especialmente otimizada
+                para dispositivos móveis, permitindo uma transição perfeita
+                entre o cardápio e o aplicativo de mensagens sem perda de dados
+                do pedido.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://www.linkedin.com/in/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="https://github.com/jamillyferreira"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__item-link"
+              href="mailto:jamillyferreira039@gmail.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__content">
+        <p class="footer__text">
+          Feito com dedicação, café e um pouco de código!
+        </p>
+        <span class="data-update"></span>
+      </div>
+    </footer>
+  </body>
+</html>
