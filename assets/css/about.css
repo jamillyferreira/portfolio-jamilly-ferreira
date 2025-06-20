@@ -13,7 +13,7 @@ body.dark-mode {
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
-  width: 80%;
+  width: 70%;
   min-height: 100vh;
   margin: 0 auto;
   padding: 10px;
@@ -48,7 +48,7 @@ body.dark-mode {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 .contact__link {
   display: flex;
@@ -58,6 +58,7 @@ body.dark-mode {
   border: 1px solid var(--text-title);
   border-radius: 6px;
   padding: 5px 15px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 .contact__link:hover {
